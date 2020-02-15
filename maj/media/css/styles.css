@@ -1,0 +1,137 @@
+.logo {
+    margin-top: 20px;
+}
+
+#logo{
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+}
+#logo img{
+    max-width: 200px;
+    width: 100%;
+}
+
+.text-centre {
+    vertical-align: middle;
+    text-align: center
+}
+.selectOrdre1{
+	cursor: pointer;
+}
+
+.titre_actu, .titre {
+	font-size: 22px;
+	font-family: "Oswald-Regular";
+	color:#e5006e;
+	text-transform: uppercase;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+label{
+	margin-right: 30px;
+}
+
+legend{
+	font-size: 16px;
+}
+
+/*============================================================================*/
+
+.flex{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+p.flex{
+    justify-content: space-between;
+}
+
+#dateip{
+    justify-content: space-around;
+}
+
+#dateip p{
+	width: 45%;
+}
+p input, p textarea{
+	width: 85%;
+}
+
+p textarea{
+	height: auto;
+}
+
+fieldset label{
+	display: block;
+}
+
+label{
+	font-weight: normal;
+}
+
+h3, h4{
+	display : block;
+	max-width : 800px;
+	border-bottom: 1px solid #000;
+}
+
+h4 span{
+	font-size: 12px;
+}
+
+#message{
+	height: 200px;
+}
+
+.ajax .row label{
+	margin: 0;
+}
+
+ul#menu{margin: 10px 0;}
+
+.menu-title{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 30px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.input-number{width: 80px; text-align: center;}
+.input-number-large{width: 150px; text-align: center;}
+.input-date{width: auto; line-height: unset !important;}
+
+.previewImg{
+    display: inline-block;
+    background-color: #191919;
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+.previewImg img{max-width: 300px;}
+.m-15{margin-top: 15px; margin-bottom: 15px;}
+
+#prodImg {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#prodImg li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 5px;
+    margin: 1px;
+}
+#prodImg li a.del{
+    display: block;
+    margin-top: 10px;
+}
+#prodImg div{margin-left: 5px;}
