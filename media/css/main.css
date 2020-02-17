@@ -117,10 +117,14 @@ p{text-align: justify;}
     flex-wrap: wrap;
     padding: 0;
 }
-#pre-nav ul, #nav ul{margin: 0; height: 100%;}
+
+#pre-nav ul, #nav ul{margin: 0; height: 71%;}/*TRANSFORM HEADER*/
 #pre-nav {
     width: 100%;
-    background-color: #0377c1;
+}
+.bg_pre-nav{
+    background-color: #c6e6fa;
+    opacity:0.9;
 }
 #pre-nav ul li{
     display: inline-block;
@@ -134,15 +138,39 @@ p{text-align: justify;}
     text-transform: uppercase;
     padding: 5px 20px;
     display: block;
-}
 
+}
 #nav {
     width: 100%;
+    text-align:center;
+    opacity: 0.9;
+}
+
+.back_nav{
     background-color: #c6e6fa;
+}
+.border_nav{
+    border:1px #278ccc solid;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /*box-shadow:5px 5px 5px #278ccc;*/
+}
+.navbar-nav li:first-child{
+       border-top-left-radius: 15px;
+}
+.navbar-nav li:last-child{
+    border-bottom-right-radius: 15px;
 }
 #nav .navbar-brand {
     display: flex;
     align-items: center;
+}
+.navbar-brand img{
+    background-color: #c6e6fa;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 6px;
+    opacity:0.9;
 }
 #nav .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(3, 119, 193, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -162,7 +190,7 @@ p{text-align: justify;}
     font-size: 14px;
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
-    padding-top: 45px;
+    padding-top: 34px;
 }
 #nav li:hover a.nav-link{color: #fff;}
 #nav .dropdown-menu {
@@ -184,7 +212,10 @@ p{text-align: justify;}
 }
 #nav .dropdown-item:hover{background-color: #0377c1;}
 #nav .dropdown-toggle::after {display: none;}
-
+.navbar-brand{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 /***************************************************** FIN MENU ************************************/
 
 /****************************************************PAGE ACCUEIL*************************************/
@@ -330,15 +361,9 @@ p{text-align: justify;}
 
 .custom-text{
   border:1px lightblue solid;
-  padding-top:25px;
-  padding-right:25px;
-  padding-left:25px;
-  padding-bottom:25px;
+  padding:25px;
   margin-bottom: 5%;
-  border-top-right-radius:37px;
-  border-top-left-radius:37px;
-  border-bottom-right-radius:37px;
-  border-bottom-left-radius:37px;
+  border-radius:37px;
   box-shadow:5px 5px 10px;
   background-color: white;
 }
@@ -430,7 +455,7 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
     padding: 20px 30px;
     border: 1px solid #fff;
     border-radius: 2px;
-    -webkit-transition: transition: all .5s ease-out;
+    -webkit-transition: transition all .5s ease-out;
     transition: all .5s ease-out;
 }
 .form button{background-color: #51a4d8; border: 0; display: block; margin: 10px auto 0 auto; text-transform: uppercase;}
@@ -532,6 +557,8 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
     padding-bottom: 52.76%;
     background-color: #56aae2;
     margin-bottom: 5%;
+    margin-top:-25%;/*TRANSFORM HEADER*/
+    z-index: -1;
 }
 .video-responsive iframe, .video-responsive object, .video-responsive embed {
     position: absolute;
@@ -548,7 +575,7 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
     margin: 0;
     text-transform: none;
     position: absolute;
-    top: 0;
+    top: 18%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -640,10 +667,7 @@ margin-bottom:5px;
 letter-spacing:0.5px;"
 }
 .border_radius{
-  border-top-right-radius:37px;
-  border-top-left-radius:37px;
-  border-bottom-right-radius:37px;
-  border-bottom-left-radius:37px;
+  border-radius:37px;
   border:1px grey solid;
   position:relative;
 }
@@ -752,6 +776,9 @@ margin-top:-12%;
 }
 /****************************************Media*****************************************************/
 @media (max-width: 767px) {
+.border_nav{
+    border:initial;
+}
   .margin_coll{
     margin-top:0;
     margin-left:0;
@@ -791,6 +818,9 @@ margin-top:-12%;
   margin-left: 20%%;
 } */
 @media (max-width: 991px) {
+    .video-responsive{
+        margin-top:0;
+    }
   .img-responsive{
     width:90%;
     margin-left:3%;
@@ -817,7 +847,8 @@ margin-top:-12%;
 
 }
 @media (max-width: 1199px) {
-    #nav li a.nav-link{padding-bottom: 20px;}
+
+    #nav li a.nav-link{font-size:13px;padding-top: 23px;}
     #textServices{
       width:100%;
     }

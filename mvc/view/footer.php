@@ -52,5 +52,6 @@
 
     <!-- Theme JavaScript -->
     <script src="/media/js/main.js"></script>
+    <script src="/media/js/test.js"></script>
     <script src="/media/js/navbar.js"></script>
     <script src="/media/js/jquery.cookiebar.js"></script>
