@@ -8,6 +8,7 @@ $model=new Model;
 $date_maj   = date("Y-m-d H:i:s");
 $id	        = $model->getInput("id");
 $titre = $model->getInput('titre');
+$text_top = $model->getInput('text_top');
 $texte_left = $model->getInput('texte_left');
 $texte_right = $model->getInput('texte_right');
 
@@ -15,12 +16,13 @@ if ($id != 0)
 {
     $update=
         <<<CODEUPDATE
-UPDATE `Pages` SET `texte_left`= :texte_left,`texte_right`= :texte_right, `date_maj`= '$date_maj'
+UPDATE `Pages` SET `text_top`= :text_top,`texte_left`= :texte_left,`texte_right`= :texte_right, `date_maj`= '$date_maj'
 WHERE `id` = :id
 CODEUPDATE;
 
     $tabBindUpdate= [
         ":id"       => $id,
+        ":text_top" => $text_top,
         ":texte_left"  => $texte_left,
         ":texte_right" => $texte_right
     ];
@@ -31,11 +33,12 @@ else
 {
     $insert =
         <<<CODESQL
-INSERT INTO `Pages`(`texte_left`,`texte_right`,`date_maj`)
-VALUES (:texte_left,:texte_right,'$date_maj')
+INSERT INTO `Pages`(`text_top`,`texte_left`,`texte_right`,`date_maj`)
+VALUES (:text_top,:texte_left,:texte_right,'$date_maj')
 CODESQL;
 
     $tabBindInsert= [
+        ":text_top" => $text_top,
         ":texte_left"    => $texte_left,
         ":texte_right"    => $texte_right,
     ];

@@ -11,6 +11,7 @@
 
         // ON RECUPERE LES DIFFERENTES VALEURS
         $titre	   = $data['titre'];
+        $text_top = $data['text_top'];
         $texte_left	   = $data['texte_left'];
         $texte_right	   = $data['texte_right'];
         $date_maj  = $data['date_maj'];
@@ -48,6 +49,7 @@ $h3
 <p>Date de dernière mise à jour : $date_maj</p>
 <form class="ajax" method="post" action="" style="max-width:800px;">
     <fieldset>
+        <p class="flex"><label for="texte">Texte de<br> présentation</label><textarea class="tiny" name="text_top" id="text_top" style="height:100px;">$text_top</textarea></p>
         <p class="flex"><label for="texte">Texte de gauche</label><textarea class="tiny" name="texte_left" id="texte_left" style="height:100px;">$texte_left</textarea></p>
         <p class="flex"><label for="texte">Texte de droite</label><textarea class="tiny" name="texte_right" id="texte_riht" style="height:100px;">$texte_right</textarea></p>
         <input type="hidden" name="controller" value="majPages" />

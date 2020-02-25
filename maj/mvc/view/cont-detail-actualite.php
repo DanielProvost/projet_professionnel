@@ -93,7 +93,7 @@ CODEIMAGE;
 
     // PARTIE PDF
     $choixPDF='';
-    $pdf = "";
+
     if ($pdf!='')
     {
         $previewPDF = '<a href="../'.$pdf.'" target="_blank"><img src="media/img/pdf.gif" alt="PDF de l\'actualité" /></a>';

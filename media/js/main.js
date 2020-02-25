@@ -1,4 +1,3 @@
-
 $(function() {
     // Animation
     $('.scrollpoint.sp-effect1').waypoint(function(){$(this).toggleClass('active');$(this).toggleClass('animated fadeInLeft');},{offset:'100%'});

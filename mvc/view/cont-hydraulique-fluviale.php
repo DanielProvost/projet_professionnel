@@ -3,18 +3,25 @@ $hydraulique_fluviale = $model->getInfoPage('hydraulique-fluviale');
 // var_dump($hydraulique_urbaine);
 ?>
 
-
 <section>
   <div class="container ul_unset">
 
       <div class="row">
-          <h1 class="col-12 col-lg-8"><?php echo $hydraulique_fluviale['titre']?></h1>
+          <h1 class="col-12 col-lg-6"><?php echo $hydraulique_fluviale['titre']?></h1>
+          <div class="col-12 col-lg-6 text-encart scrollpoint sp-effect1">
+            <?php echo $hydraulique_fluviale['text_top']?>
+          </div>
       </div>
 
-      <div class="row responsive_column_reverse">
+      <div class="row">
 
         <div class="col-12 col-lg-6">
-            <img src="/media/img/hydro-flu1.png" class="arc_photo" alt="Arc photo personnelle" style="width:100%;">
+          <div class="video-container-ass">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1UQMo9MYbRI?&autoplay=1&rel=0&loop=1&playlist=1UQMo9MYbRI"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="iframe_border"></iframe>
+      </div>
+
         </div>
         <div class="col-12 col-lg-5 offset-lg-1 custom-text">
           <div><?php echo $hydraulique_fluviale['texte_right']?></div>
@@ -30,16 +37,12 @@ $hydraulique_fluviale = $model->getInfoPage('hydraulique-fluviale');
 
 <section>
 <div class="container ul_unset">
-    <div class="row">
+    <div class="row responsive_column_reverse">
       <div class="col-12 col-lg-5 offset-lg-1 custom-text">
         <div><?php echo $hydraulique_fluviale['texte_left']?></div>
       </div>
       <div class="col-12 col-lg-5 offset-lg-1 ">
-          <div class="video-container-ass">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1UQMo9MYbRI?rel=0&autoplay=1"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen class="iframe_border"></iframe>
-      </div>
+          <img src="/media/img/hydro-flu1.png" class="arc_photo" alt="Arc photo personnelle" style="width:100%;">
     </div>
 </div>
 

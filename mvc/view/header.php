@@ -9,10 +9,12 @@
     <meta name="keyword" content="Hydratis">
     <meta name="robots" content="all">
     <title><?php echo $meta_title; ?></title>
-    
+
     <!-- Bootstrap Core CSS -->
     <link href="/media/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/media/img/logo.png" />
     <!-- Custom Fonts -->
     <link href="/media/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Slab:300,400,700|Roboto:100,400,700&display=swap" rel="stylesheet">

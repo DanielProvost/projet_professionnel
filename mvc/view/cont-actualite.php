@@ -1,10 +1,5 @@
 <?php
 $actualites = $model->getInfoActu();
-// $actualites = $_SESSION['actualite']['list'] = $model->getDataFromTable('actualite', 'ordre ASC', "statut = 1 $where");
-
-// $where = !empty($_SESSION['actualite']['id']);
-// $actualites = $_SESSION['actualite']['list'];
-
 ?>
 <div class="bg-actualite">
     <img src="/media/img/bg-pink-1.png" class="bg-fluviale-left">
@@ -12,7 +7,7 @@ $actualites = $model->getInfoActu();
 </div>
 <section class="container">
     <div class="row">
-        <h1>Actualités</h1>
+        <h1 id="titre_actu">Actualités</h1>
         <?php
         if(!empty($actualites['img'])) echo '<img src="'.$actualites['image1'].'?'.filemtime($actualites['img']).'" alt="Actualité d\'Urban Spirit" class="page-picture scrollpoint sp-effect3" />';
         if(!empty($actualites['texte'])) echo '<div class="page-text scrollpoint sp-effect5">'.$actualites['texte'].'</div>';

@@ -1,6 +1,6 @@
 <?php
-$emailDestinataire = 'dprovost67@gmail.com';
-//$emailCopie = 'ebarreyre@e-partenaire.fr';
+$emailDestinataire = 'philippe.mauzet@hydratis.com';
+$emailCopie = 'ebarreyre@e-partenaire.fr';
 
 $feedback = $error = "";
 

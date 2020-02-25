@@ -1,7 +1,7 @@
     <?php $infoPage = $model->getInfoPage('devis'); ?>
     <section class="container scrollpoint sp-effect3">
-        <h1>Demande de devis</h1>
-  
+        <h1 style="padding-top:30px";>Demande de devis</h1>
+
         <form action="" method="post" class="form ajax" id="form-devis">
             <input type="hidden" name="controller" value="ajoutDevis">
             <div class="feedback"></div>

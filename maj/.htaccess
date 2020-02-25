@@ -21,6 +21,6 @@ RewriteRule . ./index.php [L]
 
 
 #AuthName "Zone protegee"
-#AuthUserFile /var/www/vhosts/hydratis.fr/httpdocs/maj/.htpasswd_old
+#AuthUserFile /var/www/vhosts/hydratis.fr/httpdocs/maj/.htpasswd
 #AuthType Basic
 #require valid-user

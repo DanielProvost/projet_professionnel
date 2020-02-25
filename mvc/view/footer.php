@@ -2,7 +2,7 @@
     <footer class="text-sm-left scrollpoint sp-effect3">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-3 text-center"><img src="/media/img/logo.png" class=" center-block" alt="Hydratis logo"></div>
+                <div class="col-12 col-lg-3 text-center"><a href="/"><img src="/media/img/logo.png" class=" center-block" alt="Hydratis logo"></a></div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <h4>Adresse</h4>
                     <p>Technopole arbois<br>Avenue louis philibert<br>13100 Aix-en-Provence</p>
@@ -20,21 +20,21 @@
             </div>
             <div class="row">
                 <div class="col-12 col-lg-3 offset-lg-3">
-                    <a <?=$currentPage == 'hydraulique-urbaine' ? 'actif':''?> href="/hydraulique-urbaine">Hydraulique urbaine</a><br>
-                    <a <?=$currentPage == 'hydraulique-fluviale' ? 'actif':''?> href="/hydraulique-fluviale">Hydraulique fluviale</a><br>
-                    <a <?=$currentPage == 'assainissement' ? 'actif':''?> href="/assainissement">Assainissement</a><br>
-                    <a <?=$currentPage == 'eau-potable' ? 'actif':''?> href="/eau-potable">Eau potable</a><br>
+                    <a href="/hydraulique-urbaine">Hydraulique urbaine</a><br>
+                    <a href="/hydraulique-fluviale">Hydraulique fluviale</a><br>
+                    <a href="/assainissement">Assainissement</a><br>
+                    <a href="/eau-potable">Eau potable</a><br>
                 </div>
                 <div class="col-12 col-lg-3">
-                    <a <?=$currentPage == 'hydrogeologie' ? 'actif':''?> href="/hydrogeologie">Hydrogéologie<br>
-                    <a <?=$currentPage == 'service' ? 'actif':''?> href="/services">Services</a><br>
-                    <a <?=$currentPage == 'logiciel' ? 'actif':''?> href="/logiciels">Logiciels</a><br>
-                    <a <?=$currentPage == 'inpection-video-puits' ? 'actif':''?> href="/inspection-video-puits">Inspection vidéo de&nbsp;puits</a>
+                    <a href="/hydrogeologie">Hydrogéologie<br>
+                    <a href="/services">Services</a><br>
+                    <!-- <a href="/logiciels">Logiciels</a><br> -->
+                    <a href="/inspection-video-puits">Puits et canalisations</a>
                 </div>
                 <div class="col-12 col-lg-3">
-                    <a href="/"<?=$currentPage == 'hydratis' ? ' class="actif"':''?>>hydratis</a><br>
-                    <a href="/actualite"<?=$currentPage == 'actualite' ? ' class="actif"':''?>>Actualités</a><br>
-                    <a href="/devis"<?=$currentPage == 'devis' ? ' class="actif"':''?>>Demander un devis</a><br>
+                    <a href="/">hydratis</a><br>
+                    <a href="/actualite">Actualités</a><br>
+                    <a href="/devis">Demander un devis</a><br>
                 </div>
             </div>
             <div class="row" id="footer-mention">
@@ -52,6 +52,6 @@
 
     <!-- Theme JavaScript -->
     <script src="/media/js/main.js"></script>
-    <script src="/media/js/test.js"></script>
     <script src="/media/js/navbar.js"></script>
+    <script src="/media/js/header_nav.js"></script>
     <script src="/media/js/jquery.cookiebar.js"></script>

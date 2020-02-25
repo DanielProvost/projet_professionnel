@@ -187,7 +187,6 @@ DEBUTHTMLACTUS;
 <<<SQLACTUS
 SELECT Pages.`id`,`titre`, `date_maj`
 FROM Pages
-WHERE `nom_interne` <> "index"
 ORDER BY  `date_maj` DESC
 
 SQLACTUS;

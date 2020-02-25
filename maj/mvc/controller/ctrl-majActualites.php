@@ -29,6 +29,7 @@ $nomPdf = 'actualites-pdf-'.$now;
 $cheminImg = $model->uploadImg("uploadImg", $nomImg, 0, 0, 'actualite');
 $cheminPdf = $model->uploadPDF("uploadPDF", $nomPdf);
 
+
 if ($cheminImg!=''){$img=$cheminImg;}
 if ($cheminPdf!=''){$pdf=$cheminPdf;}
 

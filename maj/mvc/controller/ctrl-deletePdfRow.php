@@ -3,7 +3,7 @@
     $table  = getInput("table");
 
     switch($table){
-        case 'Actualite':
+        case 'actualite':
             $whereId = 'id';
             $recupLiens =
 <<<CODERECUP
@@ -12,7 +12,7 @@ WHERE  $whereId = :id
 CODERECUP;
             $requeteSQL =
 <<<CODESQL
-UPDATE `$table` SET `pdf`= '' 
+UPDATE `$table` SET `pdf`= ''
 WHERE $whereId = :id
 CODESQL;
             break;
@@ -22,7 +22,7 @@ CODESQL;
         ":id" => $id,
         ];
     $statement = $model->executeSQL($recupLiens, $tableauBind);
-    
+
     $ligne = $statement->fetch(PDO::FETCH_NUM);
     // ON EXTRAIT LES CHAMPS UTILES
     $lien = '../'.$ligne[0];
@@ -33,7 +33,7 @@ CODESQL;
     // MISE A JOUR DE LA BASE DE DONNEES
     $model->executeSQL($requeteSQL, $tableauBind);
 
-    
+
     $feedback =
 <<<CODEHTML
 <script type="text/javascript">

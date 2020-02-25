@@ -1,12 +1,12 @@
     <?php
-    $accueil = $model->getInfoPage('accueil');
+    $accueil = $model->getInfoPage('index');
     $actus = $model->getInfoActu();
 // print_r($actus);
     ?>
 
     <header>
         <div class="video-responsive">
-            <h1>Mieux gérer vos risques EAU</h1>
+            <h1>L’expertise qui donne du sens !</h1>
             <iframe src="https://player.vimeo.com/video/383086293?autoplay=1&loop=1&background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <img src="media/img/bloc-radius.png" class="bloc-radius-header">
         </div>
@@ -18,11 +18,9 @@
 
                 <div class="col-12 col-xl-6">
                     <h2>Nos services</h2>
-                    <div class="offset-lg-2">Aider votre collectivité à gérer le risque en disposant d'informations
-                      précises, claires et suffisament anticipées pour vous permettre d'agir.<br>
-                      Protéger votre entreprise, organiser la continuité d'activité face aux risques
-                      climatiques.Adopter les bonnes attitudes pour votre sauvegarde,celle de votre
-                      famille et de vos biens.
+                    <div class="offset-lg-2 ul_unset">
+                      <?php echo $accueil['texte_left']?>
+
                     </div>
                   </div>
 
@@ -59,7 +57,7 @@
                 </div>
               </div>
             </div>
-        </div>
+
     </section>
 
     <?php if(!empty($actus)){ ?>
@@ -112,11 +110,12 @@
     <section id="bloc-home" class="scrollpoint sp-effect3">
         <div class="container">
             <div class="row">
-                <h2 class="col-12 col-lg-6">Lorem ipsum</h2>
+                <h2 class="col-12 col-lg-6">Hydratis recrute !</h2>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-5 offset-lg-1 custom-text">
-                    Curabitur id auctor sapien, eget vehicula lectus. Fusce at gravida ex. Vestibulum in nibh hendrerit, tristique massa eget, luctus eros. Pellentesque ut aliquet leo. Etiam vehicula ut dui in placerat. Sed eleifend, erat in aliquet tempus, ligula risus porttitor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  <?php echo $accueil['texte_right']?>
+
                 </div>
             </div>
             <div class="row">
@@ -205,4 +204,3 @@
           </div>
       </div>
     </div>
-

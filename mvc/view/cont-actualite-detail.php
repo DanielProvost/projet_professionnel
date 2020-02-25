@@ -7,17 +7,14 @@ $listActu = $model->getInfoActu();
         <?php
 
         if(!empty($actu['img']))
-        echo '  <h1>'.$actu['titre'].'</h1>';
-        echo '         <div style="position:absolute;">'.$actu['date'].'</div>';
-        echo '<div class="row conteneur_image_actu col-12 col-lg-9 offset-lg-3">'.'<img src="/'.$actu['img'].'?'.filemtime($actu['img']).'" alt="'.$actu['titre'].'" class="page-picture image_size scrollpoint sp-effect3" />.</div>';
+        echo '  <h1 class="col-12">'.$actu['titre'].'</h1>';
+        echo '<p class="col-12">'.$actu['date'].'</p>';
+        echo '<div class="conteneur_image_actu col-12 col-lg-6 offset-lg-3">'.'<img src="/'.$actu['img'].'?'.filemtime($actu['img']).'" alt="'.$actu['titre'].'" class="page-picture image_size scrollpoint sp-effect3" />.</div>';
 
-        echo '<div class="scrollpoint sp-effect5">';
-
-        echo '</div>';
-        echo '<div class="row conteneur_texte_actu col-12 col-lg-6 offset-lg-3 scrollpoint sp-effect3">'.$actu['texte'].'</div>';
+        echo '<div class="conteneur_texte_actu col-12 col-lg-6 offset-lg-3">'.$actu['texte'].'</div>';
 
         if(!empty($actu['pdf']))
-        echo '<div class="row mt-3 col-12 col-lg-6 offset-lg-3"><p class="cta_actu"><a href="/'.$actu['pdf'].'" target="_blank"><i class="fa fa-file-pdf-o"></i>Voir le pdf</a></p></div>';
+        echo '<div class="col-12 col-lg-6 offset-lg-3"><p class="cta_actu"><a href="/'.$actu['pdf'].'" target="_blank"><i class="fa fa-file-pdf-o"></i> Voir le pdf</a></p></div>';
 
         ?>
     </div>

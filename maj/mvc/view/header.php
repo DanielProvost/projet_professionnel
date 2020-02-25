@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="/media/img/logo.png" />
         <link rel="stylesheet" href="media/css/bootstrap-theme.min.css"/>
         <link rel="stylesheet" href="media/css/bootstrap.min.css"/>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
