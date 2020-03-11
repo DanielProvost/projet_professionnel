@@ -8,8 +8,8 @@ $listActu = $model->getInfoActu();
 
         if(!empty($actu['img']))
         echo '  <h1 class="col-12">'.$actu['titre'].'</h1>';
-        echo '<p class="col-12">'.$actu['date'].'</p>';
-        echo '<div class="conteneur_image_actu col-12 col-lg-6 offset-lg-3">'.'<img src="/'.$actu['img'].'?'.filemtime($actu['img']).'" alt="'.$actu['titre'].'" class="page-picture image_size scrollpoint sp-effect3" />.</div>';
+        // echo '<p class="col-12">'.$actu['date'].'</p>';
+        echo '<div class="mb5 col-12 col-lg-6 offset-lg-3"><img src="/'.$actu['img'].'?'.filemtime($actu['img']).'" alt="'.$actu['titre'].'" class="img-fluid image_size scrollpoint sp-effect3" /></div>';
 
         echo '<div class="conteneur_texte_actu col-12 col-lg-6 offset-lg-3">'.$actu['texte'].'</div>';
 

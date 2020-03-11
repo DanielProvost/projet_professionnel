@@ -32,7 +32,7 @@ $hydraulique_fluviale = $model->getInfoPage('hydraulique-fluviale');
 
 <div class="section-bg-fluviale">
     <img src="/media/img/bg-pink-1.png" class="bg-fluviale-left">
-    <img src="media/img/bg-pink-2.png" class="bg-fluviale-right">
+    <img src="/media/img/bg-pink-2.png" class="bg-fluviale-right">
 </div>
 
 <section>
@@ -49,7 +49,7 @@ $hydraulique_fluviale = $model->getInfoPage('hydraulique-fluviale');
     <div class="row">
       <figure class="col-12 col-lg-5 offset-lg-4">
           <img src="/media/img/hydro-flu2.png" class="arc_photo" alt="Arc photo personnelle" style="width:100%;">
-          <img src="media/img/bg-blue-1.png" class="tache-abs" id="bg-blue-3">
+          <img src="/media/img/bg-blue-1.png" class="tache-abs" id="bg-blue-3">
       </figure>
     </div>
 
@@ -59,7 +59,7 @@ $hydraulique_fluviale = $model->getInfoPage('hydraulique-fluviale');
   <div class="row d-flex justify-content-center mt-3 bg-fond_cta">
 
       <div class="cta cta_margin">
-        <a href="/devis"<?=$currentPage == 'devis' ? ' class="actif"':''?>>Demande de devis</a>
+        <a href="/devis">Demande de devis</a>
       </div>
 
       <div class="cta cta_margin">

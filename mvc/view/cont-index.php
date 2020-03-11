@@ -92,7 +92,7 @@
                     <div class="bloc-actu-text">
                         <h4><?=$actu["titre"] ?></h4>
                         <p><?=$actu["resume"] ?></p>
-                        <a href="<?=$model->genLink('actualite', $actu['id'], $actu['titre'])?>.'" class="">En savoir plus</a>
+                        <a href="<?=$model->genLink('actualite', $actu['id'], $actu['titre'])?>" class="">En savoir plus</a>
                     </div>
                 </div>
             </div>
