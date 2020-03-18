@@ -210,7 +210,7 @@ DEBUTHTMLACTUS;
 <<<SQLACTUS
 SELECT actu.`id`, `statut`, `date`, `titre`
 FROM actualite as actu
-ORDER BY `statut` ASC, `date` ASC
+ORDER BY `statut`, `date`
 SQLACTUS;
 
 

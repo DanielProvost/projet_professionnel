@@ -5,14 +5,12 @@ class Page
     public $home = "";
     
     protected $model;
-    
     // METHODES
     // constructeur
     function __construct ()
     {
         $this->model      = null;
     }
-    
 //GETTER DES OBJETS DEFINIS DANS LE __construct()    
     function getModel()
     {
@@ -22,16 +20,12 @@ class Page
         }
         return $this->model;
     }
-    
-
-
 // METHODES DE LA CLASSE Page   
 
 //- pour recuperer l'adresse de la page courante
     function getUrl ()
     {
         $result = "";
-        
         $uri = $_SERVER["REQUEST_URI"];
         $path = parse_url($uri, PHP_URL_PATH);
 
@@ -50,7 +44,7 @@ class Page
         $model=$this->getModel();
         $pdo=$model->getConnexion();
 
-        $req='SELECT DISTINCT `nom_interne` FROM `Pages`';
+        $req='SELECT DISTINCT `nom_interne` FROM `pages`';
         $bind=[];
 
         $statement=$model->executeSQL($req,$bind);
@@ -65,18 +59,12 @@ class Page
     {
         $model=$this->getModel();
         $pdo=$model->getConnexion();
-
         $nomPage = $this->getUrl();
         if($nomPage[0]==$this->home)
         {
             $nomPage[0]="index";
         }
-
-        //gestion de la langue
-//        $langue = isset($_SESSION['langue']) ? $_SESSION['langue']:'fr';
-
         $listePages=$this->getListePages();
-
         $infos='';
         // On teste s'il on affiche une page administrée pour récupérer les infos de la base
         // Sinon on affichera les infos par défaut (A DEFINIR EN BASE DE DONNEES.. )
@@ -99,21 +87,19 @@ class Page
                 $page = 'index';
             }
         }
-        
-        $req="SELECT * FROM `Pages` WHERE `nom_interne`='".$page."'";
+        $req="SELECT * FROM `pages` WHERE `nom_interne`='".$page."'";
         $bind=[];
-
         $statement=$model->executeSQL($req,$bind);
         $result=$statement->fetch(PDO::FETCH_ASSOC);
+
         $meta_title = $infos.$result['meta_title'];
         $menu = $result['menu'];
         $meta_desc = $result['meta_desc'];
 
         
         $cheminSolo = 'mvc/view/'.$nomPage[0].'.php';
-        
         $cheminPage = 'mvc/view/cont-'.$nomPage[0].'.php';
-
+        var_dump($cheminPage);
         if (is_file($cheminSolo))
         {
             include($cheminSolo);
@@ -129,10 +115,12 @@ class Page
         else
         {
             $currentPage = $nomPage[0];
+            var_dump($currentPage);
             include("mvc/view/header.php");
             include($cheminPage);
             include("mvc/view/footer.php");
         }
+
     }
     
     function afficher404() {
