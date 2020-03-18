@@ -185,8 +185,8 @@ DEBUTHTMLACTUS;
 
         $requetePages =
 <<<SQLACTUS
-SELECT Pages.`id`,`titre`, `date_maj`
-FROM Pages
+SELECT pages.`id`,`titre`, `date_maj`
+FROM pages
 ORDER BY  `date_maj` DESC
 
 SQLACTUS;
@@ -353,7 +353,7 @@ HTMLLIGNE;
 <<<CODEMODIF
 <td class="text-center">
     <a class="action-show$showTable" data-table="$nomTable" data-id="$id" href="#show-detail">
-        <img src="media/img/edit.png">
+        <img src="media/img/edit.png" alt="">
     </a>
 </td>
 CODEMODIF;
@@ -364,7 +364,7 @@ CODEMODIF;
 <<<CODESUPPR
     <td class="text-center">
         <a class="action-delete" data-table="$nomTable" data-id="$id" href="#show-detail">
-            <img src="media/img/del.png">
+            <img src="media/img/del.png" alt="">
         </a>
     </td>
 CODESUPPR;

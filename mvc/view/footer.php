@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="row" id="footer-mention">
-                <div class="col offset-lg-3">Copyright © Hydratis - <a href="#">Mentions légales</a> - <a href="#">CGV</a> - Conception : <a href="https://agence-web-aix-en-provence.fr" target="_blank">e-partenaire</a></div>
+                <div class="col offset-lg-3">Copyright © Hydratis - <a href="/mentions-legales">Mentions légales</a> - <a href="#">CGV</a> - Conception : <a href="https://agence-web-aix-en-provence.fr" target="_blank">e-partenaire</a></div>
                 <!-- <div class="toTop"><a href="#"><i class="fas fa-arrow-up"></i></a></div> -->
             </div>
         </div>

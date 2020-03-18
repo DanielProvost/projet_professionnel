@@ -108,7 +108,6 @@ WHERE `nom_interne` = '$page'
 CODESQL;
 
     $statement = $this->executeSQL($requeteSQL);
-
     return($statement->fetch(PDO::FETCH_ASSOC));
 }
 
@@ -119,11 +118,10 @@ function getInfoActu($statut = 1){
 <<<CODESQL
 SELECT * FROM `actualite`
 where statut = $statut
-order by `date` asc
+order by `date` 
 CODESQL;
 
   $statement = $this->executeSQL($requeteSQL);
-
   return($statement->fetchAll(PDO::FETCH_ASSOC));
 
 }
@@ -158,28 +156,6 @@ function formatDateActu($date='', $lang='fr') {
     return $dateFormated;
 }
 
-function makeAriane($listUrl, $home = true, $id='ariane') {
-    $ariane = '';
-    $pos = 1;
-
-    if(count($listUrl) > 0) {
-        $ariane .= '<ul id="'.$id.'" itemscope itemtype="https://schema.org/BreadcrumbList">'.PHP_EOL;
-        if($home) $ariane .= '<li><a href="/"><i class="fa fa-home"></i></a></li>'.PHP_EOL;
-
-        foreach($listUrl as $label => $url) {
-            $ariane .= '<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">';
-            $ariane .= '<a itemprop="item" href="/'.$url.'"><span itemprop="name">'.$label.'</span></a>';
-            $ariane .= '<meta itemprop="position" content="'.$pos.'" />';
-            $ariane .= '</li>';
-            $pos++;
-        }
-
-        $ariane .= '</ul>'.PHP_EOL;
-    }
-
-    return $ariane;
-}
-
 function checkMandoryField($field, $txt) {
     return empty(trim($txt)) ? "<p>Merci de saisir un $field.</p>":'';
 }
@@ -193,7 +169,7 @@ function checkTelFormat($tel) {
     return preg_match('/^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/', $tel) ? '':'<p>Merci de saisir un téléphone valide.</p>';
 }
 
-function genLink($type='actualite', $id='', $nom) {
+function genLink($nom, $type='actualite', $id='') {
     $nom = $this->slugString($nom);
     return $type.'/'.$nom.'-'.$id;
 }

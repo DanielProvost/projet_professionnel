@@ -17,16 +17,13 @@
         $texte	   = $data['texte'];
         $img	     = $data['img'];
         $date_maj  = $data['date_maj'];
-        $langue	   = $data['langue'];
         $statut	   = $data['statut'];
         $pdf       = $data['pdf'];
-
         $h3         = '<h3>Actualité N° '.$id.'</h3>';
-
     }
     else
     {
-        $titre = $resume = $texte = $img = $date_maj = $langue = $statut = $date = '';
+        $titre = $resume = $texte = $img = $date_maj = $statut = $date = '';
         $ordre = 1;
 
         $h3       = '<h3>Nouvelle Actualité</h3>';
@@ -39,7 +36,6 @@
         $date_maj='';
         $h3='<h3>Actualité dupliquée</h3>';
     }
-
 
     // === LES <SELECT> ===
     //MISE EN LIGNE
@@ -60,9 +56,6 @@
 </select>
 SELECTSTATUT;
 
-
-
-
     // PARTIE IMAGE
     $choixImage='';
 
@@ -70,7 +63,7 @@ SELECTSTATUT;
     {
         $previewImg = '<img src="../'.$img.'" alt="aperçu de l\'image jointe à l\'actualité '.$titre.'" style="max-width:100%" /><br><br>';
         $msgImg     = '<a class="action-delete-img" data-table="'.$table.'" data-id="'.$id.'" data-field="img" href="#delete_img-'.$id.'">
-                        <img src="media/img/del.png"> Supprimer l\'image pour en uploader une nouvelle.
+                        <img src="media/img/del.png" alt=""> Supprimer l\'image pour en uploader une nouvelle.
                     </a><br><br>
                     <div class="feedbackSuppr"></div>';
         $inputImg   = '<input type="hidden" name="img" value="'.$img.'" />';
@@ -98,7 +91,7 @@ CODEIMAGE;
     {
         $previewPDF = '<a href="../'.$pdf.'" target="_blank"><img src="media/img/pdf.gif" alt="PDF de l\'actualité" /></a>';
         $msgPDF     = '<a class="action-delete-pdf" data-table="'.$table.'" data-id="'.$id.'" href="#delete_pdf-'.$id.'">
-                        <img src="media/img/del.png"> Supprimer le PDF pour en uploader un nouveau.
+                        <img src="media/img/del.png" alt=""> Supprimer le PDF pour en uploader un nouveau.
                     </a><br><br>
                     <div class="feedbackSuppr"></div>';
         $inputPDF   = '<input type="hidden" name="pdf" value="'.$pdf.'" />';

@@ -73,7 +73,7 @@ class Page
         }
 
         //gestion de la langue
-        $langue = isset($_SESSION['langue']) ? $_SESSION['langue']:'fr';
+//        $langue = isset($_SESSION['langue']) ? $_SESSION['langue']:'fr';
 
         $listePages=$this->getListePages();
 

@@ -43,5 +43,5 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <?php include('inc-nav1-'.$langue.'.php');?>
+        <?php include('inc-nav1-fr.php');?>
     </nav>

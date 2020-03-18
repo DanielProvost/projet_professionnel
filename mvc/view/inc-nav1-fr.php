@@ -1,4 +1,4 @@
-
+<?php $currentPage=""; ?>
                 <div id="nav" class="back_nav fixed-top d-lg-block">
 
                   <div id="pre-nav" class="navbarToToggle navbar-collapse collapse bg_pre-nav">

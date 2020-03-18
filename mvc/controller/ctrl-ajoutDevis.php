@@ -12,7 +12,6 @@ $email      = $model->getInput("email");
 $tel        = $model->getInput("tel");
 $message    = $model->getInput("message");
 $date       = date("Y-m-d H:i:s");
-
 $error .= $model->checkMandoryField('nom', $nom);
 $error .= $model->checkMandoryField('prénom', $prenom);
 $error .= $model->checkEmailFormat($email);

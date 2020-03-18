@@ -1,6 +1,7 @@
     <?php
     $accueil = $model->getInfoPage('index');
     $actus = $model->getInfoActu();
+
 // print_r($actus);
     ?>
 

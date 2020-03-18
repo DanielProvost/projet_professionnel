@@ -7,14 +7,12 @@ $duplic = getInput("dpl");
 
 if ($id !='0')
 {
-
     $data = $model->showRow($id,$table,'pages_id');
 
     // ON RECUPERE LES DIFFERENTES VALEURS
     $pagTitre	= $data['pages_titre'];
     $pagTexte	= $data['pages_texte'];
     $pagDate	= $data['pages_date'];
-
     $h3         = '<h3>Pages N° '.$id.'</h3>';
 
 }
