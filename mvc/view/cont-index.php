@@ -73,7 +73,7 @@
 
             <div class="carousel-item <?= $isFirstSlide ? 'active' : '' ?>">
                 <div class="bloc-actu">
-                    <div class="bloc-actu-date"><?=$model->formatDateActu($actu['date'] , $langue)?></div>
+                    <div class="bloc-actu-date"><?=$model->formatDateActu($actu['date'])?></div>
                     <div class="bloc-actu-img">
                         <img src=<?=$actu["img"]; ?> alt="titre actu" class="image_size">
 
@@ -119,23 +119,23 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-lg-6"><img src="media/img/home1-1.png" class="img-fluid" alt="Illustration accueil"></div>
+                <div class="col-12 col-lg-6"><img src="/media/img/home1-1.png" class="img-fluid" alt="Illustration accueil"></div>
             </div>
         </div>
-        <div id="home-bloc-right"><img src="media/img/accueil2-2.png" class="img-fluid" alt="Illustration accueil"></div>
+        <div id="home-bloc-right"><img src="/media/img/accueil2-2.png" class="img-fluid" alt="Illustration accueil"></div>
     </section>
 
     <!-- Metier -->
     <section id="metier">
         <div class="container scrollpoint sp-effect4">
-            <img src="media/img/bg-blue-1.png" class="tache-abs" id="bg-blue-1">
+            <img src="/media/img/bg-blue-1.png" class="tache-abs" id="bg-blue-1">
             <h2 class="text-right">Nos métiers</h2>
             <ul class="row" id="list-metier">
                 <li class="col-12 col-sm-6">
-                    <img src="media/img/bg-pink-3.png" class="tache-abs" id="bg-pink-3">
+                    <img src="/media/img/bg-pink-3.png" class="tache-abs" id="bg-pink-3">
                     <a href="services">
                         <figure>
-                            <img src="media/img/previsions-des-crues-1.png" class="img-fluid" alt="Prévisions des crues">
+                            <img src="/media/img/previsions-des-crues-1.png" class="img-fluid" alt="Prévisions des crues">
                             <figcaption><h3>Prévisions des crues</h3></figcaption>
                         </figure>
                     </a>
@@ -143,13 +143,13 @@
                 <li class="col-12 col-sm-6">
                     <a href="hydraulique-urbaine">
                         <figure>
-                            <img src="media/img/hydraulique-urbaine-1.png" class="img-fluid" alt="Hydraulique urbaine">
+                            <img src="/media/img/hydraulique-urbaine-1.png" class="img-fluid" alt="Hydraulique urbaine">
                             <figcaption><h3>Hydraulique urbaine</h3></figcaption>
                         </figure>
                     </a>
                 </li>
                 <li class="col-12 col-sm-6">
-                    <img src="media/img/bg-pink-4.png" class="tache-abs" id="bg-pink-4">
+                    <img src="/media/img/bg-pink-4.png" class="tache-abs" id="bg-pink-4">
                     <a href="hydrogeologie">
                         <figure>
                             <img src="media/img/hydrogeologie.png" class="img-fluid" alt="Hydrogéologie">
@@ -160,7 +160,7 @@
                 <li class="col-12 col-sm-6">
                     <a href="hydraulique-fluviale">
                         <figure>
-                            <img src="media/img/hydraulique-fluviale-1.png" class="img-fluid" alt="Hydraulique fluviale">
+                            <img src="/media/img/hydraulique-fluviale-1.png" class="img-fluid" alt="Hydraulique fluviale">
                             <figcaption><h3>Hydraulique fluviale</h3></figcaption>
                         </figure>
                     </a>
@@ -168,13 +168,13 @@
                 <li class="col-12 col-sm-6">
                     <a href="eau-potable">
                         <figure>
-                            <img src="media/img/eau-potable-1.png" class="img-fluid" alt="Eau potable">
+                            <img src="/media/img/eau-potable-1.png" class="img-fluid" alt="Eau potable">
                             <figcaption><h3>Eau potable</h3></figcaption>
                         </figure>
                     </a>
                 </li>
                 <li class="col-12 col-sm-6">
-                    <img src="media/img/bg-blue-2.png" class="tache-abs" id="bg-blue-2">
+                    <img src="/media/img/bg-blue-2.png" class="tache-abs" id="bg-blue-2">
                     <a href="assainissement">
                         <figure>
                             <img src="media/img/assainissement-1.png" class="img-fluid" alt="Assainissement">
@@ -183,10 +183,10 @@
                     </a>
                 </li>
                 <li class="col-12 col-sm-6">
-                    <img src="media/img/bg-pink-5.png" class="tache-abs" id="bg-pink-5">
+                    <img src="/media/img/bg-pink-5.png" class="tache-abs" id="bg-pink-5">
                     <a href="/inspection-video-puits">
                         <figure>
-                            <img src="media/img/inspection-des-puits.png" class="img-fluid" alt="Inspection des puits">
+                            <img src="/media/img/inspection-des-puits.png" class="img-fluid" alt="Inspection des puits">
                             <figcaption><h3>Inspection des puits</h3></figcaption>
                         </figure>
                     </a>
@@ -197,7 +197,7 @@
     <div class="container ">
       <div class="row d-flex justify-content-center mt-3 bg-fond_cta">
           <div class="cta cta_margin">
-            <a href="/devis"<?=$currentPage == 'devis' ? ' class="actif"':''?>>Demande de devis</a>
+            <a href="/devis">Demande de devis</a>
           </div>
           <div class="cta cta_margin">
             <a href="Tel:0442556784">Nous appeler</a>

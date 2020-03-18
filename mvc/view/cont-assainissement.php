@@ -30,8 +30,8 @@ $assainissement = $model->getInfoPage('assainissement');
         <?php echo $assainissement['texte_left']?>
       </div>
       <div class="col-12 col-lg-5 offset-lg-1">
-        <img src="media/img/assainissement-1.png" class="img-fluid" alt="Assainissement">
-        <img src="media/img/bg-blue-1.png">
+        <img src="/media/img/assainissement-1.png" class="img-fluid" alt="Assainissement">
+        <img src="/media/img/bg-blue-1.png" alt="background bleu">
       </div>
     </div>
   </div>

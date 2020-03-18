@@ -65,7 +65,7 @@ $inspection = $model->getInfoPage('inspection-video-puits');
       </div>
     </div>
     <div class="row materiel_tvs" style="position:relative;">
-      <img src="/media/img/fond_inspection.png" style="position: absolute;width:100%;">
+      <img src="/media/img/fond_inspection.png" style="position: absolute;width:100%;" alt="background inspection"/>
       <div class="col-12 col-lg-3 offset-lg-1 scrollpoint sp-effect1">
         <figure>
           <img src="/media/img/chariot.png" class="img_inspection-3 images_tvs" alt="Equipemennt d'accès au puit">

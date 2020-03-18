@@ -30,7 +30,7 @@ $listActu = $model->getInfoActu();
                   }
               }
             if(isset($keyPrev)) echo '<a href="/'.$model->genLink('actualite', $listActu[$keyPrev]['id'], $listActu[$keyPrev]['titre']).'" class="actualite_nav"><i class="fa fa-caret-left"></i> Actualité précédente</a>';
-            echo '<a href="/actualite" class="actualite_nav">Retour au sommaire</a">';
+            echo '<a href="/actualite" class="actualite_nav">Retour au sommaire</a>';
             if(isset($keySuiv)) echo '<a href="/'.$model->genLink('actualite', $listActu[$keySuiv]['id'], $listActu[$keySuiv]['titre']).'" class="actualite_nav">Actualité suivante <i class="fa fa-caret-right"></i></a>';
             ?>
         </p>

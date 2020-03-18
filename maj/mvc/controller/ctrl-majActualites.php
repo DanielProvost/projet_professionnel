@@ -13,8 +13,6 @@ $ordre    = $model->getInput("ordre");
 $resume   = $model->getInput("resume");
 $texte    = $model->getInput("texte");
 $img      = $model->getInput("img");
-//$langue   = $model->getInput("langue");
-$langue   = 'fr';
 $statut   = $model->getInput("statut");
 $lien     = $model->getInput("lien");
 $pdf      = $model->getInput("pdf");
@@ -37,7 +35,7 @@ if ($id != 0)
 {
     $update=
 <<<CODEUPDATE
-UPDATE `actualite` SET `titre`= :titre,`resume`= :resume, `texte`= :texte, `img`= :img,`pdf`= :pdf, `date_maj`= '$date_maj', `ip_maj`= '$ip', `langue`= :langue, `statut`= :statut,`date` = :date, `ordre` = :ordre
+UPDATE `actualite` SET `titre`= :titre,`resume`= :resume, `texte`= :texte, `img`= :img,`pdf`= :pdf, `date_maj`= '$date_maj', `ip_maj`= '$ip', `statut`= :statut,`date` = :date, `ordre` = :ordre
 WHERE `id` = :id
 CODEUPDATE;
 
@@ -48,7 +46,6 @@ CODEUPDATE;
         ":ordre"    => $ordre,
         ":resume"   => $resume,
         ":texte"    => $texte,
-        ":langue"   => $langue,
         ":statut"   => $statut,
         ":img"      => $img,
         ":pdf"      => $pdf,
@@ -60,8 +57,8 @@ else
 {
     $insert =
 <<<CODESQL
-INSERT INTO `actualite`(`id`, `titre`,`resume`, `texte`, `img`, `date_cre`, `date_maj`, `ip_maj`, `langue`, `statut`, `pdf`, `date`, `ordre`)
-VALUES (NULL, :titre,:resume, :texte, :img, '$date_maj', '$date_maj', '$ip', :langue, :statut, :pdf, :date, :ordre)
+INSERT INTO `actualite`(`id`, `titre`,`resume`, `texte`, `img`, `date_cre`, `date_maj`, `ip_maj`, `statut`, `pdf`, `date`, `ordre`)
+VALUES (NULL, :titre,:resume, :texte, :img, '$date_maj', '$date_maj', '$ip', :statut, :pdf, :date, :ordre)
 CODESQL;
 
     $tabBindInsert= [
@@ -70,7 +67,6 @@ CODESQL;
         ":ordre"    => $ordre,
         ":texte"    => $texte,
         ":resume"   => $resume,
-        ":langue"   => $langue,
         ":statut"   => $statut,
         ":img"      => $img,
         ":pdf"      => $pdf,

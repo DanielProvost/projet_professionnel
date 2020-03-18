@@ -100,7 +100,7 @@ class Page
             }
         }
         
-        $req="SELECT * FROM `Pages` WHERE `nom_interne`='".$page."' AND `langue`='".$langue."'";
+        $req="SELECT * FROM `Pages` WHERE `nom_interne`='".$page."'";
         $bind=[];
 
         $statement=$model->executeSQL($req,$bind);

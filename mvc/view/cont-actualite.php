@@ -2,8 +2,8 @@
 $actualites = $model->getInfoActu();
 ?>
 <div class="bg-actualite">
-    <img src="/media/img/bg-pink-1.png" class="bg-fluviale-left">
-    <img src="media/img/bg-pink-2.png" class="bg-fluviale-right">
+    <img src="/media/img/bg-pink-1.png" class="bg-fluviale-left" alt="bg_left">
+    <img src="/media/img/bg-pink-2.png" class="bg-fluviale-right" alt="bg_right">
 </div>
 <section class="container">
     <div class="row">
@@ -23,7 +23,7 @@ $actualites = $model->getInfoActu();
                 echo '<li>'.PHP_EOL;
                 echo '  <div class="bloc-encart">'.PHP_EOL;
                 echo '         <div><p>'.$actu['date'].'</p>';
-                echo '         <img src="'.$actu['img'].'" class="image_size_actualite"/></div>';
+                echo '         <img src="'.$actu['img'].'" class="image_size_actualite" alt="image actualite"/></div>';
                 echo '          <div><h2>'.$actu['titre'].'</h2>'.PHP_EOL;
                 echo '          <p>'.$actu['resume'].'</p>'.PHP_EOL;
                 echo '      <a href="'.$model->genLink('actualite', $actu['id'], $actu['titre']).'" class="">'.PHP_EOL;
