@@ -1,6 +1,6 @@
 <?php
 $assainissement = $model->getInfoPage('assainissement');
-// var_dump($hydraulique_urbaine);
+// var_dump($assainissement);
 ?>
 
 

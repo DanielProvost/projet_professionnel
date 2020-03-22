@@ -115,6 +115,7 @@ ul{list-style: none; padding: 0;}
   margin-left:5%;
 }
 p{text-align: justify;}
+
 /* MENU */
 
 .navbar-custom {
@@ -501,85 +502,6 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
 
 /*************************************************** FIN FORM *****************************************/
 
-/**************************************************** ARIANE ******************************************/
-
-#ariane {
-    display: inline-block;
-    background-color: #f6f6f6;
-    margin-bottom: 15px;
-    padding-right: 15px;
-    border: 1px solid #d6d4d4;
-    border-radius: 3px;
-}
-#ariane .fa-home {
-    position: absolute;
-    left: 10px;
-    top: 5px;
-    z-index: 10;
-}
-#ariane > li {
-    position: relative;
-    display: inline-block;
-    background-color: #fff;
-}
-#ariane > li a {
-    color: #0377c1;
-    text-transform: uppercase;
-    line-height: 24px;
-    font-weight: 600;
-    font-size: 13px;
-    padding: 0 10px 0 20px;
-}
-#ariane > li a:hover {
-    color: #51a4d8;
-    text-decoration: none;
-}
-#ariane > li:first-child {
-
-}
-#ariane > li:last-child {
-    background-color: transparent;
-}
-#ariane > li:last-child::after {display: none;}
-#ariane > li::after {
-    content: '';
-    position: absolute;
-    top: 3px;
-    right: -10px;
-    width: 18px;
-    height: 18px;
-    z-index: 5;
-    background: #fff;
-    border-right: 1px solid #d6d4d4;
-    border-top: 1px solid #d6d4d4;
-    border-radius: 2px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-#ariane-light {
-    padding: 0 15px;
-    margin-bottom: 10px;
-}
-#ariane-light > li {
-    display: inline-block;
-}
-#ariane-light > li, #ariane-light > li a {
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-#ariane-light > li a:hover {
-    color: #d08147;
-    text-decoration: none;
-}
-#ariane-light > li + li::before {
-    content: '>';
-    margin: 0 10px;
-}
-
-/********************************************* FIN ARIANE ******************************************/
-
 .video-responsive{
     position: relative;
     overflow: hidden;
@@ -623,8 +545,8 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
 }
 /************************************Page Hydraulique-urbaine****************************************/
 .text-encart{
-  padding:20px 5px 5px 0px;
-  border:1px blue solid;
+  padding:20px 5px 5px 0;
+  /*border:1px blue solid;*/
   font-size: 1.2em;
   margin-top:4%;
   margin-bottom: 5%;
@@ -647,7 +569,7 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
 .text-encart_inspection{
   height:130px;
   border:1px #c6e6fa solid;
-  padding:20px 5px 5px 0px;
+  padding:20px 5px 5px 0;
   border-radius:31px;
   box-shadow: 5px 5px 5px;
 }
@@ -673,6 +595,7 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
 .bg-fluviale-left{
    position:absolute;z-index:-1;
    height:100vh;
+
 }
 /*************************************Page Assainissement************************************/
 #section-bg-assainissement{
@@ -852,6 +775,11 @@ width:100%;
 }
 
 /****************************************Media*****************************************************/
+@media(max-width:576px){
+    .footer_text{
+        text-align: center;
+    }
+}
 @media (max-width: 768px) {
   #nav li.actif{
     border-bottom-right-radius: 0px;

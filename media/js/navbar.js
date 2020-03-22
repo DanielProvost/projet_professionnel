@@ -8,7 +8,6 @@ function change_bg(){
       pre_nav.classList.remove('bg_pre-nav');
       window.addEventListener('scroll',function(e){
       let y = window.pageYOffset;
-      console.log(y);
       let nav_change =document.getElementById('nav');
         if(y > 550){
           nav_change.classList.add('back_nav');

@@ -15,7 +15,7 @@ $hydrogeologie = $model->getInfoPage('hydrogeologie');
     <div class="row">
       <div class="col-12 col-lg-5 offset-lg-1">
         <figure>
-            <img src="media/img/hydrogeologie.png" class="img_hydrogeologie" alt="Hydrogéologie">
+            <img src="/media/img/hydrogeologie.png" class="img_hydrogeologie" alt="Hydrogéologie">
         </figure>
       </div>
       <div class="col-12 col-lg-5 offset-lg-1 custom-text">
@@ -26,8 +26,8 @@ $hydrogeologie = $model->getInfoPage('hydrogeologie');
 </section>
 
 <section class="section-bg-fluviale">
-    <img src="/media/img/bg-pink-1.png" class="bg-fluviale-left" style="width:100%;">
-    <img src="media/img/bg-pink-2.png" class="bg-fluviale-right">
+    <img src="/media/img/bg-pink-1.png" class="bg-fluviale-left" alt="">
+    <img src="/media/img/bg-pink-2.png" class="bg-fluviale-right" alt="">
 </section>
 
 <section>
@@ -38,7 +38,7 @@ $hydrogeologie = $model->getInfoPage('hydrogeologie');
       </div>
       <div class="col-12 col-lg-5 offset-lg-1">
         <figure>
-          <img src="media/img/hydrogeologie1.png" class="img-fluid" alt="Hydrogeologie">
+          <img src="/media/img/hydrogeologie1.png" class="img-fluid" alt="Hydrogeologie">
         </figure>
       </div>
     </div>

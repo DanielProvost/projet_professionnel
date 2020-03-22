@@ -99,7 +99,7 @@ class Page
         
         $cheminSolo = 'mvc/view/'.$nomPage[0].'.php';
         $cheminPage = 'mvc/view/cont-'.$nomPage[0].'.php';
-        var_dump($cheminPage);
+//        var_dump($cheminPage);
         if (is_file($cheminSolo))
         {
             include($cheminSolo);
@@ -115,7 +115,7 @@ class Page
         else
         {
             $currentPage = $nomPage[0];
-            var_dump($currentPage);
+//            var_dump($currentPage);
             include("mvc/view/header.php");
             include($cheminPage);
             include("mvc/view/footer.php");

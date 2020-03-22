@@ -9,21 +9,19 @@
         <div class="video-responsive">
             <h1>L’expertise qui donne du sens !</h1>
             <iframe src="https://player.vimeo.com/video/383086293?autoplay=1&loop=1&background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <img src="media/img/bloc-radius.png" class="bloc-radius-header">
+            <img src="/media/img/bloc-radius.png" class="bloc-radius-header" alt="">
         </div>
     </header>
 
     <section id="bloc-presentation" class="scrollpoint sp-effect1">
         <div class="container">
             <div class="row">
-
                 <div class="col-12 col-xl-6">
                     <h2>Nos services</h2>
                     <div class="offset-lg-2 ul_unset">
                       <?php echo $accueil['texte_left']?>
-
                     </div>
-                  </div>
+                </div>
 
                   <div class="col-12 col-xl-6">
                     <div class="container">

@@ -5,17 +5,17 @@
                 <div class="col-12 col-lg-3 text-center"><a href="/"><img src="/media/img/logo.png" class=" center-block" alt="Hydratis logo"></a></div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <h4>Adresse</h4>
-                    <p>Technopole arbois<br>Avenue louis philibert<br>13100 Aix-en-Provence</p>
+                    <p class="footer_text">Technopole arbois<br>Avenue louis philibert<br>13100 Aix-en-Provence</p>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <h4>Téléphone</h4>
-                    <p><a href="tel:0679468991">06 79 46 89 91</a></p>
+                    <p class="footer_text"><a href="tel:0679468991">06 79 46 89 91</a></p>
                     <h4>Mail</h4>
-                    <p><a href="mailto:contact@hydratis.com ">contact@hydratis.com </a></p>
+                    <p class="footer_text"><a href="mailto:contact@hydratis.com ">contact@hydratis.com </a></p>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <h4>Réseaux sociaux</h4>
-                    <p>Suivez-nous <a href="#" target="_blank"><i class="fa fa-facebook"></i></a></p>
+                    <p class="footer_text">Suivez-nous <a href="#" target="_blank"><i class="fa fa-facebook"></i></a></p>
                 </div>
             </div>
             <div class="row">
@@ -42,7 +42,7 @@
                 <!-- <div class="toTop"><a href="#"><i class="fas fa-arrow-up"></i></a></div> -->
             </div>
         </div>
-    </footer>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/media/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -54,3 +54,4 @@
     <script src="/media/js/main.js"></script>
     <script src="/media/js/navbar.js"></script>
     <script src="/media/js/jquery.cookiebar.js"></script>
+    </footer>
