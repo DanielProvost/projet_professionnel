@@ -7,12 +7,8 @@
     <list default="true" id="d1f301e9-08de-4b68-a52f-ccb01dfef081" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/media/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/media/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/js/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/media/js/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/class/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/class/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/view/cont-assainissement.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/view/cont-assainissement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/view/cont-hydrogeologie.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/view/cont-hydrogeologie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/view/cont-contact.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc/view/cont-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/view/cont-index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/view/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/view/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +140,7 @@
       <workItem from="1584005578519" duration="14000" />
       <workItem from="1584369855006" duration="287000" />
       <workItem from="1584455892172" duration="31566000" />
-      <workItem from="1584860270857" duration="1160000" />
+      <workItem from="1584860270857" duration="4273000" />
     </task>
     <servers />
   </component>

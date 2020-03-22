@@ -169,7 +169,7 @@ function checkTelFormat($tel) {
     return preg_match('/^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/', $tel) ? '':'<p>Merci de saisir un téléphone valide.</p>';
 }
 
-function genLink($nom, $type='actualite', $id='') {
+function genLink($type='actualite', $id='',$nom) {
     $nom = $this->slugString($nom);
     return $type.'/'.$nom.'-'.$id;
 }

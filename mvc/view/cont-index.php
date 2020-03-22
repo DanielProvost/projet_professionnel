@@ -30,7 +30,7 @@
                           <div class="vignette">
                             <a href="/particuliers">
                               <h3>PARTICULIERS</h3>
-                              <img src="media/img/services_particuliers.jpg" class="img-services" alt="Image particuliers">
+                              <img src="/media/img/services_particuliers.jpg" class="img-services" alt="Image particuliers">
                               <div class="symbole">+</div>
                             </a>
                           </div>
@@ -38,7 +38,7 @@
                           <div class="vignette">
                             <a href="/entreprises">
                               <h3>ENTREPRISES</h3>
-                              <img src="media/img/entreprises_services.jpg" class="img-services" alt="Image entreprise">
+                              <img src="/media/img/entreprises_services.jpg" class="img-services" alt="Image entreprise">
                               <div class="symbole">+</div>
                             </a>
                           </div>
@@ -47,7 +47,7 @@
                         <div class="vignette margin_coll">
                           <a href="/collectivites">
                             <h3>COLLECTIVITÉS</h3>
-                            <img src="media/img/collectivites_services.png" class="img-services" alt="Image collectivités">
+                            <img src="/media/img/collectivites_services.png" class="img-services" alt="Image collectivités">
                             <div class="symbole">+</div>
                           </a>
                         </div>
