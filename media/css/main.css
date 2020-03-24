@@ -192,7 +192,7 @@ nav + * {
 #nav li:hover,
 #nav li.actif {
     background-color: #51a4d8;
-    border-bottom-right-radius: 37px;;
+    border-bottom-right-radius: 37px;
 }
 #nav li.dropdown:hover {border-bottom-right-radius: 0;}
 #nav li + li {

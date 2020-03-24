@@ -28,10 +28,8 @@ class Page
         $result = "";
         $uri = $_SERVER["REQUEST_URI"];
         $path = parse_url($uri, PHP_URL_PATH);
-
         $nomFichier = pathinfo($path, PATHINFO_FILENAME);
         $extension  = pathinfo($path, PATHINFO_EXTENSION);
-
         $result = [$nomFichier, $extension, $path];
         
         return $result;
@@ -41,14 +39,11 @@ class Page
 //- récupérer la liste des pages administrées
     function getListePages()
     {
-        $model=$this->getModel();
-        $pdo=$model->getConnexion();
-
-        $req='SELECT DISTINCT `nom_interne` FROM `pages`';
-        $bind=[];
-
-        $statement=$model->executeSQL($req,$bind);
-        $listePages=$statement->fetchAll(PDO::FETCH_COLUMN, 0);
+        $model = $this->getModel();
+        $req = 'SELECT DISTINCT `nom_interne` FROM `pages`';
+        $bind = [];
+        $statement = $model->executeSQL($req,$bind);
+        $listePages = $statement->fetchAll(PDO::FETCH_COLUMN, 0);
 
         return $listePages;
     }
@@ -57,15 +52,14 @@ class Page
 //- pour afficher la page demandée en fonction de l'URL
     function afficherPage()
     {
-        $model=$this->getModel();
-        $pdo=$model->getConnexion();
+        $model = $this->getModel();
         $nomPage = $this->getUrl();
-        if($nomPage[0]==$this->home)
+        if($nomPage[0] == $this->home)
         {
-            $nomPage[0]="index";
+            $nomPage[0] = "index";
         }
-        $listePages=$this->getListePages();
-        $infos='';
+        $listePages = $this->getListePages();
+        $infos = '';
         // On teste s'il on affiche une page administrée pour récupérer les infos de la base
         // Sinon on affichera les infos par défaut (A DEFINIR EN BASE DE DONNEES.. )
         if(in_array($nomPage[0], $listePages)) //PAGE ADMINISTREE
@@ -87,10 +81,10 @@ class Page
                 $page = 'index';
             }
         }
-        $req="SELECT * FROM `pages` WHERE `nom_interne`='".$page."'";
-        $bind=[];
-        $statement=$model->executeSQL($req,$bind);
-        $result=$statement->fetch(PDO::FETCH_ASSOC);
+        $req = "SELECT * FROM `pages` WHERE `nom_interne`='".$page."'";
+        $bind = [];
+        $statement = $model->executeSQL($req,$bind);
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
 
         $meta_title = $infos.$result['meta_title'];
         $menu = $result['menu'];
@@ -99,7 +93,6 @@ class Page
         
         $cheminSolo = 'mvc/view/'.$nomPage[0].'.php';
         $cheminPage = 'mvc/view/cont-'.$nomPage[0].'.php';
-//        var_dump($cheminPage);
         if (is_file($cheminSolo))
         {
             include($cheminSolo);
@@ -114,8 +107,6 @@ class Page
         }
         else
         {
-            $currentPage = $nomPage[0];
-//            var_dump($currentPage);
             include("mvc/view/header.php");
             include($cheminPage);
             include("mvc/view/footer.php");
