@@ -42,9 +42,11 @@
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div style="position:absolute;top:0;bottom:0;" class="col-xs-2 bg-warning">
+                <div class="col-xs-2 bg-warning">
                     <a href="/index.php" id="logo"><img src="/maj/media/img/logoE.png" alt="E-partenaire" /></a>
                         <div class="menu-title"><a href="/maj/index.php?titre=liste-pages">Pages</a></div>
                         <div class="menu-title"><a href="/maj/index.php?titre=liste-actualites">Actualité</a></div>
                         <div class="menu-title"><a href="/maj/index.php?titre=liste-devis">Devis</a></div>
                 </div>
+
+<!--                style="position:absolute;top:0;bottom:0;"-->

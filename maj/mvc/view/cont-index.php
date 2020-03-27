@@ -1,14 +1,7 @@
-			<div class="col-xs-10 col-xs-offset-2" style="padding-bottom: 20px;">
+			<div class="col-xs-10 col-xs-offset-2">
                 <?php
                     $model = new Model;
-                    //$lang  = $model->getInput("lang");
-                    $lang = 'fr';
                     $titre = $model->getInput("titre");
-//                    if ($titre == "")
-//                    {
-//                        $titre = "liste-actualites";
-//                    }
-
                     switch($titre)
                     {
                         case 'liste-actualites':
@@ -23,12 +16,7 @@
                             $table='Pages';
                             $model->readTableListe($table,$titre);
                             break;
-//                        default :
-//                            $table='Pages';
-//                            $model->readPage($table,$titre,$lang);
-//                            break;
                     }
-
                 ?>
 			</div>
 

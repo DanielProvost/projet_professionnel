@@ -12,7 +12,6 @@
         // ON RECUPERE LES DIFFERENTES VALEURS
         $titre	   = $data['titre'];
         $date      = $data['date'];
-        $ordre     = $data['ordre'];
         $resume    = $data['resume'];
         $texte	   = $data['texte'];
         $img	     = $data['img'];
@@ -23,8 +22,7 @@
     }
     else
     {
-        $titre = $resume = $texte = $img = $date_maj = $statut = $date = '';
-        $ordre = 1;
+        $titre = $resume = $texte = $img = $date_maj = $statut = $date = $pdf = '';
 
         $h3       = '<h3>Nouvelle Actualité</h3>';
     }
@@ -59,23 +57,25 @@ SELECTSTATUT;
     // PARTIE IMAGE
     $choixImage='';
 
-    if ($img!='')
-    {
-        $previewImg = '<img src="../'.$img.'" alt="aperçu de l\'image jointe à l\'actualité '.$titre.'" style="max-width:100%" /><br><br>';
-        $msgImg     = '<a class="action-delete-img" data-table="'.$table.'" data-id="'.$id.'" data-field="img" href="#delete_img-'.$id.'">
+
+    if ($img!='') {
+        $previewImg = '<img src="../' . $img . '" alt="aperçu de l\'image jointe à l\'actualité ' . $titre . '" style="max-width:100%" /><br><br>';
+        $msgImg = '<a class="action-delete-img" data-table="' . $table . '" data-id="' . $id . '" data-field="img" href="#delete_img-' . $id . '">
                         <img src="media/img/del.png" alt=""> Supprimer l\'image pour en uploader une nouvelle.
                     </a><br><br>
                     <div class="feedbackSuppr"></div>';
-        $inputImg   = '<input type="hidden" name="img" value="'.$img.'" />';
+        $inputImg = '<input type="hidden" name="img" value="' . $img . '" />';
     }
     else
     {
         $previewImg = '';
         $msgImg     = '<p>Aucune image sélectionnée</p><br>';
         $inputImg   = '<input type="file" name="uploadImg" id="uploadImg"><br><br>';
+
     }
 
     $choixImage=
+
 <<<CODEIMAGE
 <div>
     $previewImg

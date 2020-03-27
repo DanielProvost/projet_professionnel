@@ -188,7 +188,6 @@ DEBUTHTMLACTUS;
 SELECT pages.`id`,`titre`, `date_maj`
 FROM pages
 ORDER BY  `date_maj` DESC
-
 SQLACTUS;
 
         $enteteHtmlActualites =
@@ -409,249 +408,6 @@ CODEFINHTML;
 //==================================================================================================================================
 //==================================================================================================================================
 //==================================================================================================================================
-    function readRubrique ($nomTable, $titre, $lang)
-    {
-        $pdo   = $this->getConnexion();
-
-        $requeteSQL =
-<<<CODESQL
-SELECT * FROM `$nomTable`
-WHERE `nom_interne` = '$titre'
-AND `langue` = '$lang'
-CODESQL;
-
-        $tableauBind = [];
-        $statement = $this->executeSQL($requeteSQL, $tableauBind);
-
-        $ligne = $statement->fetch(PDO::FETCH_ASSOC);
-        // ON EXTRAIT LES CHAMPS UTILES
-        $id         = $ligne["id"];
-        $titre      = $ligne["titre"];
-        $texte      = $ligne["texte"];
-        $date_maj   = $ligne["date_maj"];
-        $langue     = $ligne["langue"];
-        $nom_int    = $ligne["nom_interne"];
-        $img1       = $ligne["image1"];
-        $img2       = $ligne["image2"];
-        $img3       = $ligne["image3"];
-        $img1Nom    = $ligne["image1-nom"];
-        $img2Nom    = $ligne["image2-nom"];
-        $img3Nom    = $ligne["image3-nom"];
-
-        if($nom_int == 'accueil') {
-
-            $img1Time = !empty($img1) ? '?'.filemtime("../$img1"):'';
-            $img2Time = !empty($img2) ? '?'.filemtime("../$img2"):'';
-            $img3Time = !empty($img3) ? '?'.filemtime("../$img3"):'';
-
-            $codeHtml =
-<<<CODEHTML
-<h2 class="titre">Page accueil</h2>
-<p> Date de la dernière modification : $date_maj</p>
-<form class="ajax" method="post" action="">
-    <div class="m-15"><textarea name="texte" class="tiny">$texte</textarea></div>
-    <fieldset>
-        <legend>Les services</legend>
-        <div>
-            <input type="hidden" name="img1" value="$img1" />
-            <input type="file" name="uploadImg1" id="uploadImg1" />
-            <p class="m-15"><label for="image1-nom">Nom du 1er service</label><input type="text" name="image1-nom" id="image1-nom" value="$img1Nom" /></p>
-            <div class="previewImg"><img src="../$img1$img1Time" /></div>
-        </div>
-        <div>
-            <input type="hidden" name="img2" value="$img2" />
-            <input type="file" name="uploadImg2" id="uploadImg2" />
-            <p class="m-15"><label for="image2-nom">Nom du 2ème service</label><input type="text" name="image2-nom" id="image2-nom" value="$img2Nom" /></p>
-            <div class="previewImg"><img src="../$img2$img2Time" /></div>
-        </div>
-        <div>
-            <input type="hidden" name="img3" value="$img3" />
-            <input type="file" name="uploadImg3" id="uploadImg3" />
-            <p class="m-15"><label for="image3-nom">Nom du 3ème service</label><input type="text" name="image3-nom" id="image3-nom" value="$img3Nom" /></p>
-            <div class="previewImg"><img src="../$img3$img3Time" /></div>
-        </div>
-    </fieldset>
-    <input type="hidden" name="controller" value="majRubriques" />
-    <input type="hidden" name="rub" value="$nom_int" />
-    <input type="hidden" name="id" value="$id" />
-    <button type="submit" class="btn btn-success">Valider</button>
-    <div class="feedback"></div>
-</form>
-CODEHTML;
-
-        }else if($nom_int == 'slider') {
-
-            $img1Time = !empty($img1) ? '?'.filemtime("../$img1"):'';
-            $img2Time = !empty($img2) ? '?'.filemtime("../$img2"):'';
-            $img3Time = !empty($img3) ? '?'.filemtime("../$img3"):'';
-
-            $codeHtml =
-<<<CODEHTML
-<h2 class="titre">Rubrique slider</h2>
-<p> Date de la dernière modification : $date_maj</p>
-<form class="ajax" method="post" action="">
-    <fieldset>
-        <legend>Les slides</legend>
-        <div>
-            <input type="hidden" name="img1" value="$img1" />
-            <input type="file" name="uploadImg1" id="uploadImg1" class="m-15" />
-            <div class="previewImg"><img src="../$img1$img1Time" /></div>
-        </div>
-        <div>
-            <input type="hidden" name="img2" value="$img2" />
-            <input type="file" name="uploadImg2" id="uploadImg2" class="m-15" />
-            <div class="previewImg"><img src="../$img2$img2Time" /></div>
-        </div>
-        <div>
-            <input type="hidden" name="img3" value="$img3" />
-            <input type="file" name="uploadImg3" id="uploadImg3" class="m-15" />
-            <div class="previewImg"><img src="../$img3$img3Time" /></div>
-        </div>
-    </fieldset>
-    <input type="hidden" name="controller" value="majRubriques" />
-    <input type="hidden" name="rub" value="$nom_int" />
-    <input type="hidden" name="id" value="$id" />
-    <button type="submit" class="btn btn-success">Valider</button>
-    <div class="feedback"></div>
-</form>
-CODEHTML;
-
-        }else{
-            $prevImg = $msgImg = '';
-            if(!empty($img1)) {
-                $prevImg = '<div class="previewImg"><img src="../'.$img1.'?'.filemtime("../$img1").'" /></div>';
-                $msgImg = '<br><a class="action-delete-img" data-table="'.$nomTable.'" data-id="'.$id.'" data-field="image1" href="#delete_img-'.$id.'">
-                        <img src="media/img/del.png"> Supprimer l\'image.
-                    </a><br><br>
-                    <div class="feedbackSuppr"></div>';
-            }
-
-            $codeHtml =
-<<<CODEHTML
-<h2 class="titre">Rubrique $titre</h2>
-<p> Date de la dernière modification : $date_maj</p>
-<form class="ajax" method="post" action="">
-    <div class="m-15"><textarea name="texte" class="tiny">$texte</textarea></div>
-    <fieldset>
-        <legend>Image de la page</legend>
-        <input type="hidden" name="img1" value="$img1" />
-        <input type="file" name="uploadImg1" id="uploadImg1" class="m-15" />
-        $prevImg
-        $msgImg
-    </fieldset>
-    <input type="hidden" name="controller" value="majRubriques" />
-    <input type="hidden" name="rub" value="$nom_int" />
-    <input type="hidden" name="id" value="$id" />
-    <button type="submit" class="btn btn-success">Valider</button>
-    <div class="feedback"></div>
-</form>
-CODEHTML;
-
-        }
-
-        echo $codeHtml;
-
-    }
-
-//==================================================================================================================================
-//==================================================================================================================================
-//==================================================================================================================================
-    function readPage ($nomTable, $titre, $lang)
-    {
-        $pdo   = $this->getConnexion();
-
-        $requeteSQL =
-<<<CODESQL
-SELECT * FROM `$nomTable`
-WHERE `nom_interne` = '$titre'
-AND `langue` = '$lang'
-CODESQL;
-
-        $tableauBind = [
-                ];
-
-        $statement = $this->executeSQL($requeteSQL, $tableauBind);
-
-        $ligne = $statement->fetch(PDO::FETCH_ASSOC);
-        // ON EXTRAIT LES CHAMPS UTILES
-        $id         = $ligne["id"];
-        $meta_title = $ligne["meta_title"];
-        $meta_desc  = $ligne["meta_desc"];
-        $date_maj   = $ligne["date_maj"];
-        $langue     = $ligne["langue"];
-        $nom_int    = $ligne["nom_interne"];
-
-        $langueUP = strtoupper($langue);
-
-        $codeHtml =
-<<<CODEHTML
-<h2 class="titre_actu">Page $nom_int</h2>
-<p> Date de la dernière modification : $date_maj</p>
-<br>
-<p>Langue : <strong>$langueUP</strong></p>
-<br><br>
-<form class="ajax" method="post" action="" style="max-width:800px;">
-    <p class="row"><label for="meta_title" class="col-xs-2">META TITLE : </label><input class="col-xs-10" type="text" name="meta_title" value="$meta_title" /></p>
-    <p class="row"><label for="meta_desc" class="col-xs-2">META DESC : </label><textarea class="col-xs-10" name="meta_desc">$meta_desc</textarea></p>
-    <input type="hidden" name="controller" value="majPages" />
-    <input type="hidden" name="id" value="$id" />
-    <button type="submit" class="btn btn-success">Valider</button>
-    <div class="feedback"></div>
-</form>
-CODEHTML;
-
-        echo $codeHtml;
-
-    }
-
-//==================================================================================================================================
-//==================================================================================================================================
-//==================================================================================================================================
-    function uploadImage ($nameInput, $nomImg, $largeurMini, $hauteurMini)
-    {
-        $cheminWorkspace = "";
-        $cheminMini      = "";
-
-        // VERIFIER SI IL Y UN FICHIER UPLOADE
-        if (isset($_FILES["$nameInput"]))
-        {
-            $cheminTemporaire   = $_FILES["$nameInput"]["tmp_name"];
-            $nomFichierOrigine  = $_FILES["$nameInput"]["name"];
-            // CONVERTIR EN NOMBRE
-            $tailleFichier      = intval($_FILES["$nameInput"]["size"]);
-            $codeErreur         = intval($_FILES["$nameInput"]["error"]);
-
-            // ON VEUT UN FICHIER BIEN TRANSFERE ET NON VIDE
-            if (($codeErreur == 0) && ($tailleFichier > 0))
-            {
-                // VERIFIER SI LE SUFFIXE EST AUTORISE
-                $extension = pathinfo($nomFichierOrigine, PATHINFO_EXTENSION);
-                // CONVERTIR EN MINUSCULES
-                $extension = strtolower($extension);
-
-                $tabExtensionOk = [ "jpeg", "jpg", "png", "gif", "svg" ];
-
-                if (in_array($extension, $tabExtensionOk))
-                {
-                    // DEPLACER LE FICHIER DANS NOTRE WORKSPACE
-                    // SECURITE: IL FAUT VERIFIER SI LE SUFFIXE EST AUTORISE
-                    // SECURITE2: IL FAUT NORMALISER LE NOM DU FICHIER
-                    $cheminWorkspace = "../media/img/$nomImg.$extension";
-                    move_uploaded_file($cheminTemporaire, $cheminWorkspace);
-
-                    if ($extension != "svg")
-                    {
-                        // ON PEUT CREER UN VERSION MINIATURE
-                        $cheminMini = "../media/img/mini-$nomImg.$extension";
-
-                        // LA FONCTION convertMini VA CREER UNE VERSION MINIATURE
-                        $cheminMini = $this->convertMini($cheminWorkspace, $extension, $cheminMini, $largeurMini, $hauteurMini);
-                    }
-                }
-            }
-        }
-        return [ $cheminWorkspace, $cheminMini ];
-    }
 
 //==================================================================================================================================
 //==================================================================================================================================
@@ -742,42 +498,6 @@ CODEHTML;
         return $resultat;
     }
 
-//==================================================================================================================================
-//==================================================================================================================================
-//==================================================================================================================================
-    function uploadImgProd ($file)
-    {
-        $listImg = array();
-
-        foreach($file['error'] as $key => $val) {
-            if($val == 0) { // SI UPLOAD OK
-
-                $cheminTemporaire   = $file['tmp_name'][$key];
-                $nomFichierOrigine  = $file['name'][$key];
-                // CONVERTIR EN NOMBRE
-                $tailleFichier      = intval($file['size'][$key]);
-
-                // ON VEUT UN FICHIER NON VIDE
-                if ($tailleFichier > 0)
-                {
-                    // VERIFIER SI LE SUFFIXE EST AUTORISE
-                    $extension = pathinfo($nomFichierOrigine, PATHINFO_EXTENSION);
-                    // CONVERTIR EN MINUSCULES
-                    $extension = strtolower($extension);
-
-                    $tabExtensionOk = [ "jpeg", "jpg", "png", "gif", "svg" ];
-
-                    if (in_array($extension, $tabExtensionOk))
-                    {
-                        $listImg[] = ['nomTmp' => $cheminTemporaire, 'ext' => $extension];
-                    }
-                }
-
-            }
-        }
-
-        return $listImg;
-    }
 
 //==================================================================================================================================
 //==================================================================================================================================
@@ -802,7 +522,6 @@ CODEHTML;
                 $extension = pathinfo($nomFichierOrigine, PATHINFO_EXTENSION);
                 // CONVERTIR EN MINUSCULES
                 $extension = strtolower($extension);
-
                 $tabExtensionOk = [ "jpeg", "jpg", "png", "gif", "svg" ];
 
                 if (in_array($extension, $tabExtensionOk))
@@ -823,6 +542,10 @@ CODEHTML;
                     if($largeurMax > 0 || $hauteurMax > 0) {
                         $this->convertMini($cheminWorkspace, $extension, $cheminMini, $largeurMax, $hauteurMax);
                     }
+                    return substr($cheminWorkspace,3);
+                }
+                else {
+                    return 1;
                 }
             }
         }

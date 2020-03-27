@@ -95,8 +95,7 @@ SITE.traiteShowActuAjax = function (event)
     var table = jQuery(this).attr("data-table");
     var id    = jQuery(this).attr("data-id");
     var requeteGet = "id=" + id + "&table=" + table;
-// DEBUG
-// alert(requeteGet);
+
     window.location.href =("detail-actualite.php?" + requeteGet);
 }
 SITE.traiteShowPagesAjax = function (event)
@@ -105,8 +104,6 @@ SITE.traiteShowPagesAjax = function (event)
     var table = jQuery(this).attr("data-table");
     var id    = jQuery(this).attr("data-id");
     var requeteGet = "id=" + id + "&table=" + table;
-// DEBUG
-//     alert(requeteGet);
     window.location.href =("detail-page.php?" + requeteGet);
 }
 
