@@ -47,15 +47,18 @@
 <h2 class="titre_actu">Pages</h2>
 $h3
 <p>Date de dernière mise à jour : $date_maj</p>
-<form class="ajax" method="post" action="" style="max-width:800px;">
+<form class="ajax" method="post" action="">
     <fieldset>
-        <p class="flex"><label for="texte">Texte de<br> présentation</label><textarea class="tiny" name="text_top" id="text_top" style="height:100px;">$text_top</textarea></p>
-        <p class="flex"><label for="texte">Texte de gauche</label><textarea class="tiny" name="texte_left" id="texte_left" style="height:100px;">$texte_left</textarea></p>
-        <p class="flex"><label for="texte">Texte de droite</label><textarea class="tiny" name="texte_right" id="texte_riht" style="height:100px;">$texte_right</textarea></p>
+        <p class="flex"><label for="texte">Texte de<br> présentation</label>
+        <textarea class="tiny" name="text_top" id="text_top">$text_top</textarea></p>
+        <p class="flex"><label for="texte">Texte de gauche</label>
+        <textarea class="tiny" name="texte_left" id="texte_left">$texte_left</textarea></p>
+        <p class="flex"><label for="texte">Texte de droite</label>
+        <textarea class="tiny" name="texte_right" id="texte_riht">$texte_right</textarea></p>
         <input type="hidden" name="controller" value="majPages" />
         <input type="hidden" name="id" value=$id />
     </fieldset>
-    <br><br>
+    <br>
     <button type="submit" class="btn btn-success">Valider</button> $dupliquer
     <div class="feedback"></div>
 </form>

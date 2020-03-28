@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d1f301e9-08de-4b68-a52f-ccb01dfef081" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maj/media/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/maj/media/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maj/mvc/class/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/maj/mvc/class/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maj/mvc/controller/ctrl-majActualites.php" beforeDir="false" afterPath="$PROJECT_DIR$/maj/mvc/controller/ctrl-majActualites.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maj/mvc/controller/ctrl-showRowPages.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maj/mvc/view/cont-detail-actualite.php" beforeDir="false" afterPath="$PROJECT_DIR$/maj/mvc/view/cont-detail-actualite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maj/mvc/view/cont-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/maj/mvc/view/cont-index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maj/mvc/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/maj/mvc/view/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc/class/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/class/Model.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +151,8 @@
       <workItem from="1585117997380" duration="13949000" />
       <workItem from="1585140746123" duration="24530000" />
       <workItem from="1585291679423" duration="5123000" />
-      <workItem from="1585318424077" duration="1965000" />
+      <workItem from="1585318424077" duration="3323000" />
+      <workItem from="1585371639022" duration="418000" />
     </task>
     <servers />
   </component>
@@ -235,11 +231,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="220" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1585123525336" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585318425326">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585371640282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1584455893584" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585318425326" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585371640282" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1585142537915">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
