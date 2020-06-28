@@ -1,7 +1,7 @@
 <?php
 $eau_potable = $model->getInfoPage('eau-potable');
-// var_dump($hydraulique_urbaine);
 ?>
+
 
 <section id="bg-eau-potable">
   <div class="container ul_unset">

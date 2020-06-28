@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f301e9-08de-4b68-a52f-ccb01dfef081" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d315bcd2-eb73-4a62-9b9f-ae906f0e45d3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d315bcd2-eb73-4a62-9b9f-ae906f0e45d3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maj/mvc/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/maj/mvc/view/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maj/mvc/view/cont-detail-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/maj/mvc/view/cont-detail-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/upload/actualite/test-image-ex-xd-20200326-164652.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc/class/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/class/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/class/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/class/Page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/controller/ctrl-ajoutDevis.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/controller/ctrl-ajoutDevis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/view/cont-eau-potable.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/view/cont-eau-potable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/view/cont-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/view/cont-index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/view/inc-nav1-fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/view/inc-nav1-fr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,46 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hydratis" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hydratis" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hydratis" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="e_partenaire_hydratis: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hydratis" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="e_partenaire_hydratis: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="actualite: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
-    <select />
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,7 +33,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -74,7 +43,7 @@
     <property name="last.edited.regexp" value="Sample Text" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,18 +51,6 @@
       <recent name="C:\wamp64\www\projet_professionnel" />
       <recent name="C:\wamp64\www\projet_professionnel\maj" />
     </key>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -152,90 +109,87 @@
       <workItem from="1585140746123" duration="24530000" />
       <workItem from="1585291679423" duration="5123000" />
       <workItem from="1585318424077" duration="3323000" />
-      <workItem from="1585371639022" duration="418000" />
+      <workItem from="1585371639022" duration="4889000" />
+      <workItem from="1585412338444" duration="3344000" />
+      <workItem from="1585558570984" duration="70000" />
+      <workItem from="1585561413888" duration="7644000" />
+      <workItem from="1585719968328" duration="647000" />
+      <workItem from="1585888346703" duration="63000" />
+      <workItem from="1586671337781" duration="1534000" />
+      <workItem from="1586706028749" duration="71000" />
+      <workItem from="1587356156632" duration="483000" />
+      <workItem from="1587435076813" duration="727000" />
+      <workItem from="1589794483670" duration="2185000" />
+      <workItem from="1591072162491" duration="130000" />
+      <workItem from="1591277134780" duration="138000" />
+      <workItem from="1591794375351" duration="747000" />
+      <workItem from="1592206915626" duration="701000" />
+      <workItem from="1592208033038" duration="12000" />
+      <workItem from="1592899578239" duration="9499000" />
+      <workItem from="1593171770638" duration="610000" />
+      <workItem from="1593326843833" duration="769000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Inspections" timestamp="1584521038127">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="73" key="#Inspections/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1584521038127" />
-    <state x="361" y="70" key="#SQL_Dialects" timestamp="1581180005071">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="70" key="#SQL_Dialects/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1581180005071" />
     <state x="395" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583862664823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1583862664823" />
-    <state x="516" y="268" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581848073612">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1592208043770">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="516" y="268" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1581848073612" />
-    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1581447419368">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1581447419368" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1584005591142">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1583864979979" />
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584005591142" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1591072291359" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592208043770" />
     <state width="1024" height="120" key="GridCell.Tab.0.bottom" timestamp="1585291725061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1581446560420" />
     <state width="1024" height="120" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585291725061" />
     <state width="1024" height="120" key="GridCell.Tab.0.center" timestamp="1585291725061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1581446560420" />
     <state width="1024" height="120" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585291725061" />
     <state width="1024" height="120" key="GridCell.Tab.0.left" timestamp="1585291725060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1581446560420" />
     <state width="1024" height="120" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585291725060" />
     <state width="1024" height="120" key="GridCell.Tab.0.right" timestamp="1585291725061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1581446560420" />
     <state width="1024" height="120" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585291725061" />
-    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1581179342027">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1581179342027" />
-    <state x="277" y="54" key="SettingsEditor" timestamp="1585291853619">
+    <state x="277" y="54" key="SettingsEditor" timestamp="1585385436588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1584513134048" />
-    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585291853619" />
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585385436588" />
     <state x="499" y="220" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1585123525336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="220" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1585123525336" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585371640282">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1586706078174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1584455893584" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585371640282" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1585719969450" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586706078174" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1585142537915">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

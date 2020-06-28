@@ -1,9 +1,12 @@
     <?php
     $accueil = $model->getInfoPage('index');
+
     $actus = $model->getInfoActu();
 
-// print_r($actus);
     ?>
+<!--    <pre>-->
+<!--        --><?php //print_r($accueil['titre'])?>
+<!--    </pre>-->
 
     <header>
         <div class="video-responsive">
@@ -74,7 +77,7 @@
                 <div class="bloc-actu">
                     <div class="bloc-actu-date"><?=$model->formatDateActu($actu['date'])?></div>
                     <div class="bloc-actu-img">
-                        <img src=<?=$actu["img"]; ?> alt="titre actu" class="image_size">
+                        <img src="<?=$actu["img"]; ?>" alt="titre actu" class="image_size">
 
                         <?php if(count($actus) > 1) { ?>
                         <a class="carousel-control-prev" href="#carouselActu" role="button" data-slide="prev">

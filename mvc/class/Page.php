@@ -97,7 +97,7 @@ class Page
         {
             include($cheminSolo);
         }
-        elseif ($nomPage[0] == 'maj') {
+        elseif ($nomPage[0] === 'maj') {
             header("Location: /maj/index.php");
             exit;
         }

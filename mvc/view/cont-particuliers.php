@@ -20,7 +20,7 @@ $particuliers = $model->getInfoPage('particuliers');
 <div class="container ">
   <div class="row d-flex justify-content-center mt-3 bg-fond_cta">
       <div class="cta cta_margin">
-        <a href="/devis"<?=$currentPage == 'devis' ? ' class="actif"':''?>>Demande de devis</a>
+        <a href="/devis"<?=$currentPage === 'devis' ? ' class="actif"':''?>>Demande de devis</a>
       </div>
       <div class="cta cta_margin">
         <a href="Tel:0442556784">Nous appeler</a>

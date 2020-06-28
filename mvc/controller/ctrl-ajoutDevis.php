@@ -1,7 +1,7 @@
 <?php
-$emailDestinataire = 'philippe.mauzet@hydratis.com';
-$emailCopie = 'ebarreyre@e-partenaire.fr';
-
+//$emailDestinataire = 'philippe.mauzet@hydratis.com';
+//$emailCopie = 'ebarreyre@e-partenaire.fr';
+$emailDestinataire = 'dprovost67@gmail.com';
 $feedback = $error = "";
 
 // RECUPERER LES INFOS

@@ -99,7 +99,7 @@ class Model
 //----------------------------------------------------------------------------------------------------------------------------------
 
 function getInfoPage($page='accueil'){
-    $pdo = $this->getConnexion();
+//    $pdo = $this->getConnexion(); C'est pas la peine la fonction executeSQL récupère déjà les données
 
     $requeteSQL =
 <<<CODESQL
