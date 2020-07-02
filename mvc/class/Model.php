@@ -21,8 +21,8 @@ class Model
 
             // PARAMETRES DE CONNEXION A LA BASE DE DONNEES
             $nomDatabase  = "e_partenaire_hydratis";
-            $userDatabase = "root";
-            $mdpDatabase  = "";
+            $userDatabase = "admin_hydra";
+            $mdpDatabase  = "Aurelie12$";
             $hostDatabase = "hydratis-local.fr";
 
             // Data Source Name

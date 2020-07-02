@@ -107,14 +107,20 @@ h4{
     letter-spacing: 3px;
 }
 
-a:focus{color: inherit; text-decoration: none;}
-
-ul{list-style: none; padding: 0;}
+a:focus{
+    color: inherit;
+    text-decoration: none;
+}
+ul{
+    list-style: none; padding: 0;
+}
 .ul_unset ul{
   list-style: initial;
   margin-left:5%;
 }
-p{text-align: justify;}
+p{
+    text-align: justify;
+}
 
 /* MENU */
 
@@ -122,18 +128,20 @@ p{text-align: justify;}
     flex-wrap: wrap;
     padding: 0;
 }
-#pre-nav ul, #nav ul{margin: 0; height: 71%;}
+#pre-nav ul,
+#nav ul{
+    margin: 0;
+    height: 71%;
+}
 #pre-nav {
     width: 100%;
-    /* background-color: #0377c1; */
 }
-/* .bg_pre-nav{
-  background:url('/media/img/fond_eau.jpg');
-} */
 #pre-nav ul li{
     display: inline-block;
 }
-#pre-nav ul li + li{border-left: 3px solid transparent;}
+#pre-nav ul li + li{
+    border-left: 3px solid transparent;
+}
 #pre-nav ul li a{
     color: #fff;
     font-size: 13px;
@@ -187,14 +195,18 @@ nav + * {
 #nav .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-#navbarSupportedContent li {background-color: #add8f3; opacity:0.9;}
-
+#navbarSupportedContent li {
+    background-color: #add8f3;
+    opacity:0.9;
+}
 #nav li:hover,
 #nav li.actif {
     background-color: #51a4d8;
     border-bottom-right-radius: 37px;
 }
-#nav li.dropdown:hover {border-bottom-right-radius: 0;}
+#nav li.dropdown:hover {
+    border-bottom-right-radius: 0;
+}
 #nav li + li {
     border-left: 2px solid #fff;
 }
@@ -207,7 +219,9 @@ nav + * {
     padding-top: 34px;
 }
 #nav li:hover a.nav-link,
-#nav li.actif a.nav-link{color: #fff;}
+#nav li.actif a.nav-link{
+    color: #fff;
+}
 #nav .dropdown-menu
 {
     margin: 0;
@@ -221,15 +235,18 @@ nav + * {
 }
 #nav .dropdown-item
 {
-    /* padding: 0.5rem; */
     color: #fff;
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
     font-size: 13px;
     border-bottom-right-radius: 15px;
 }
-#nav .dropdown-item:hover{background-color: #0377c1;}
-#nav .dropdown-toggle::after {display: none;}
+#nav .dropdown-item:hover{
+    background-color: #0377c1;
+}
+#nav .dropdown-toggle::after {
+    display: none;
+}
 #onglet_inspection{
   line-height: 19px;
   width:178px;
@@ -306,11 +323,15 @@ nav + * {
   margin-bottom:10%;
 }
 
-
-#slider{margin-bottom: 5%;}
-#slider .carousel-caption{padding-bottom: 3%;}
-
-#carouselActu {padding: 0;}
+#slider{
+    margin-bottom: 5%;
+}
+#slider .carousel-caption{
+    padding-bottom: 3%;
+}
+#carouselActu {
+    padding: 0;
+}
 #actu {
     margin-bottom: 5%;
     background: url('../img/bg-pink-1.png') no-repeat left center, url('../img/bg-pink-2.png') no-repeat right center;
@@ -347,17 +368,28 @@ nav + * {
     line-height: 16px;
     margin-left: 15%;
 }
-#actu .bloc-actu-text a{color: #0377c1; text-transform: uppercase;}
-#actu .bloc-actu-text a:hover{color: #0377c1;}
-#actu .bloc-actu-img{position: relative;}
+#actu .bloc-actu-text a {
+    color: #0377c1;
+    text-transform: uppercase;
+}
+#actu .bloc-actu-text a:hover{
+    color: #0377c1;
+}
+#actu .bloc-actu-img{
+    position: relative;
+}
 #actu .bloc-actu-img img {
     max-width: 100%;
     height: auto;
     border-radius: 30px;
     border-top-left-radius: 0;
 }
-#actu .carousel-control-prev {left: -15%;}
-#actu .carousel-control-next {right:-15%;}
+#actu .carousel-control-prev {
+    left: -15%;
+}
+#actu .carousel-control-next {
+    right:-15%;
+}
 #actu .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%230377c1' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
 }
@@ -379,7 +411,6 @@ nav + * {
     width: 50%;
     text-align: right;
 }
-
 .custom-text{
   border:1px lightblue solid;
   padding:25px;
@@ -388,7 +419,6 @@ nav + * {
   box-shadow:5px 5px 10px;
   background-color: white;
 }
-
 .custom-text p{
   text-indent: 20px;
 }
@@ -400,31 +430,59 @@ nav + * {
   background-color: white;
   font-size:1.3em;
 }
-
-
 #metier{
     background: url('../img/bg-cyan.png') no-repeat left center;
     background-size: 90%;
     overflow: hidden;
 }
-#metier, #metier .container, #list-metier li{position: relative;}
-
-.tache-abs{position: absolute; z-index: 5;}
-#bg-blue-1{top: 0; left: 100%;}
-#bg-blue-2 {top: 20%;right: 0;}
-#bg-blue-3{top:-16%; right:-16%;z-index:-1;opacity:0.33;}
-#bg-pink-3 {top: 20%; right: 80%;}
-#bg-pink-4 {top: 45%;right: 5%;}
-#bg-pink-5 {right: 60%;z-index: 3;}
-#bg-pink-6 {top: 48%; right: 76%;width:42%;height:auto;}
-
+#metier, #metier .container, #list-metier li{
+    position: relative;
+}
+.tache-abs{
+    position: absolute;
+    z-index: 5;
+}
+#bg-blue-1{
+    top: 0;
+    left: 100%;
+}
+#bg-blue-2 {
+    top: 20%;
+    right: 0;
+}
+#bg-blue-3{
+    top:-16%;
+    right:-16%;
+    z-index:-1;
+    opacity:0.33;
+}
+#bg-pink-3 {
+    top: 20%;
+    right: 80%;
+}
+#bg-pink-4 {
+    top: 45%;
+    right: 5%;
+}
+#bg-pink-5 {
+    right: 60%;
+    z-index: 3;
+}
+#bg-pink-6 {
+    top: 48%;
+    right: 76%;
+    width:42%;
+    height:auto;
+}
 #list-metier {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 0;
 }
-#list-metier li {margin-bottom: 3rem;}
+#list-metier li {
+    margin-bottom: 3rem;
+}
 #list-metier li figure {
     display: flex;
     justify-content: space-between;
@@ -433,11 +491,15 @@ nav + * {
     height: 100%;
     margin: 0;
 }
-#list-metier li:hover a {text-decoration: none;}
-#list-metier li:hover figure img {opacity: 0.75;}
-#list-metier li figure img {z-index: 4;}
-
-
+#list-metier li:hover a {
+    text-decoration: none;
+}
+#list-metier li:hover figure img {
+    opacity: 0.75;
+}
+#list-metier li figure img {
+    z-index: 4;
+}
 footer{
     background: url('../img/bg-footer.jpg') no-repeat center top #fef7f9;
     background-size: contain;
@@ -449,9 +511,18 @@ footer p, footer a, footer a:hover{
     font-size: 16px;
     text-transform: uppercase;
 }
-footer .fa{margin: 0 5px;}
-footer .fa:hover{color: #77bae6;}
-footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: uppercase; margin-top: 30px;}
+footer .fa{
+    margin: 0 5px;
+}
+footer .fa:hover{
+    color: #77bae6;
+}
+footer #footer-mention{
+    color: #0377c1;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
 
 /* FORM */
 
@@ -464,7 +535,8 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
     text-transform: uppercase;
     font-weight: 300;
 }
-.form input, .form textarea{
+.form input,
+.form textarea{
     border-radius: 0;
     border-color: #cccccc;
     padding: 15px 20px;
@@ -472,7 +544,10 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
     height: auto;
     font-size: 16px;
 }
-.form textarea{min-height: 100%; resize: vertical;}
+.form textarea{
+    min-height: 100%;
+    resize: vertical;
+}
 .form-control:focus {
     border-color: #cccccc;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(152,152,152,.6);
@@ -488,20 +563,38 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
     -webkit-transition: transition all .5s ease-out;
     transition: all .5s ease-out;
 }
-.form button{background-color: #51a4d8; border: 0; display: block; margin: 10px auto 0 auto; text-transform: uppercase;}
-.form button:hover{background-color: #0377c1; text-decoration: none;}
-.form .bg-danger, .form .bg-success{padding: 1em; border: 1px solid #cccccc; margin-bottom: 15px;}
-.form .bg-danger :last-child, .form .bg-success :last-child{margin-bottom: 0;}
-.form .bg-danger{color: #a94442;}
-.form .bg-success{color: #808080; text-align: center;}
+.form button{
+    background-color: #51a4d8;
+    border: 0;
+    display: block;
+    margin: 10px auto 0 auto;
+    text-transform: uppercase;
+}
+.form button:hover{
+    background-color: #0377c1;
+    text-decoration: none;
+}
+.form .bg-danger, .form .bg-success{
+    padding: 1em;
+    border: 1px solid #cccccc;
+    margin-bottom: 15px;
+}
+.form .bg-danger :last-child, .form .bg-success :last-child{
+    margin-bottom: 0;
+}
+.form .bg-danger{
+    color: #a94442;
+}
+.form .bg-success{
+    color: #808080;
+    text-align: center;
+}
 .form .errorForm {
     list-style: square;
     list-style-position: inside;
     margin-bottom: 15px;
 }
-
 /*************************************************** FIN FORM *****************************************/
-
 .video-responsive{
     position: relative;
     overflow: hidden;
@@ -511,7 +604,9 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
     background-color: #56aae2;
     margin-bottom: 5%;
 }
-.video-responsive iframe, .video-responsive object, .video-responsive embed {
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
     position: absolute;
     top: 0;
     left: 0;
@@ -590,7 +685,7 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
     width:100%;height:400px;position:absolute;top:34%;
 }
 .bg-fluviale-right{
-    position:absolute;right:0;z-index:-1;"
+    position:absolute;right:0;z-index:-1;
 }
 .bg-fluviale-left{
    position:absolute;z-index:-1;
@@ -628,9 +723,14 @@ footer #footer-mention{color: #0377c1; font-weight: 600; text-transform: upperca
   background-size: 100% 55%;
 }
 /*************************************Page hydrogeologie***********************************/
-.img_hydrogeologie{width:100%;margin-top:3rem;}
+.img_hydrogeologie{
+    width:100%;
+    margin-top:3rem;
+}
 /*************************************Page Previsions des crues:services************************************/
-.services1{width:100%;}
+.services1{
+    width:100%;
+}
 /*************************************Page Previsions des crues:logiciel************************************/
 .bloc_outil{
   display:flex;
@@ -645,7 +745,7 @@ padding-bottom:0px;
 font-size:1.8em;
 font-weight:500;
 margin-bottom:5px;
-letter-spacing:0.5px;"
+letter-spacing:0.5px;
 }
 .border_radius{
   border-radius:37px;
@@ -661,7 +761,7 @@ letter-spacing:0.5px;"
   position:absolute;
   width:25%;
   top:-32px;
-  left:-22px;"
+  left:-22px;
 }
 .bloc_outil1 p,
 .bloc_outil2 p,
@@ -687,14 +787,14 @@ letter-spacing:0.5px;"
 .bloc_outil3{
   width:384px;
   height:176px;
-  top:100;
-  left:300;
+  top:100px;
+  left:300px;
 }
 .bloc_outil3 img{
   position:absolute;
   width:25%;
   top:-32px;
-  left:-16px;"
+  left:-16px;
 }
 /*************************************Page inspection video de puits************************************/
 #bg-inspection-de-puits{
@@ -776,6 +876,9 @@ width:100%;
 
 /****************************************Media*****************************************************/
 @media(max-width:576px){
+    #actu .bloc-actu-text{
+        width: auto;
+    }
     .footer_text{
         text-align: center;
     }

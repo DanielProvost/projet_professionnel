@@ -14,7 +14,7 @@ $inspection = $model->getInfoPage('inspection-video-puits');
         <div class="col-12 col-lg-5 offset-lg-1">
           <div class="video-container-ass">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/26m--_giftQ?rel=0&autoplay=1&loop=1&playlist=26m--_giftQ"
-          frameborder="0" allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen class="iframe_border"></iframe>
         </div>
       </div>

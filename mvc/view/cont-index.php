@@ -11,7 +11,7 @@
     <header>
         <div class="video-responsive">
             <h1>L’expertise qui donne du sens !</h1>
-            <iframe src="https://player.vimeo.com/video/383086293?autoplay=1&loop=1&background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/383086293?autoplay=1&loop=1&background=1"></iframe>
             <img src="/media/img/bloc-radius.png" class="bloc-radius-header" alt="">
         </div>
     </header>
@@ -130,11 +130,11 @@
     <!-- Metier -->
     <section id="metier">
         <div class="container scrollpoint sp-effect4">
-            <img src="/media/img/bg-blue-1.png" class="tache-abs" id="bg-blue-1">
+            <img src="/media/img/bg-blue-1.png" class="tache-abs" id="bg-blue-1" alt="fond">
             <h2 class="text-right">Nos métiers</h2>
             <ul class="row" id="list-metier">
                 <li class="col-12 col-sm-6">
-                    <img src="/media/img/bg-pink-3.png" class="tache-abs" id="bg-pink-3">
+                    <img src="/media/img/bg-pink-3.png" class="tache-abs" id="bg-pink-3" alt="fond">
                     <a href="services">
                         <figure>
                             <img src="/media/img/previsions-des-crues-1.png" class="img-fluid" alt="Prévisions des crues">
@@ -151,7 +151,7 @@
                     </a>
                 </li>
                 <li class="col-12 col-sm-6">
-                    <img src="/media/img/bg-pink-4.png" class="tache-abs" id="bg-pink-4">
+                    <img src="/media/img/bg-pink-4.png" class="tache-abs" id="bg-pink-4" alt="fond">
                     <a href="hydrogeologie">
                         <figure>
                             <img src="media/img/hydrogeologie.png" class="img-fluid" alt="Hydrogéologie">
@@ -176,7 +176,7 @@
                     </a>
                 </li>
                 <li class="col-12 col-sm-6">
-                    <img src="/media/img/bg-blue-2.png" class="tache-abs" id="bg-blue-2">
+                    <img src="/media/img/bg-blue-2.png" class="tache-abs" id="bg-blue-2" alt="fond">
                     <a href="assainissement">
                         <figure>
                             <img src="media/img/assainissement-1.png" class="img-fluid" alt="Assainissement">
@@ -185,7 +185,7 @@
                     </a>
                 </li>
                 <li class="col-12 col-sm-6">
-                    <img src="/media/img/bg-pink-5.png" class="tache-abs" id="bg-pink-5">
+                    <img src="/media/img/bg-pink-5.png" class="tache-abs" id="bg-pink-5" alt="fond">
                     <a href="/inspection-video-puits">
                         <figure>
                             <img src="/media/img/inspection-des-puits.png" class="img-fluid" alt="Inspection des puits">

@@ -20,8 +20,8 @@ class Model
             // AU DEPART ON N'A PAS DE CONNEXION
             // ALORS ON LA CREE UNE SEULE FOIS
             $nomDatabase  = "e_partenaire_hydratis";
-            $userDatabase = "root";
-            $mdpDatabase  = "";
+            $userDatabase = "admin_hydra";
+            $mdpDatabase  = "Aurelie12$";
             $hostDatabase = "hydratis-local.fr";
 
             // Data Source Name
